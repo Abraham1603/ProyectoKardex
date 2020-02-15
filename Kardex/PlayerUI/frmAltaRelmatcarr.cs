@@ -70,5 +70,15 @@ namespace PlayerUI
                 cbmateria.Items.Add(dtma.Rows[i]["materia"]);
             }
         }
+
+        private void cbcarreras_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbConsultaCarrera_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

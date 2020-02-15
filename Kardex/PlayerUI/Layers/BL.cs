@@ -71,6 +71,22 @@ namespace Kardex.Layers
 
 
         }
+        public DataTable validadosmateriashorario(string matcarr,string horario,string  dia1,string dia2,string  periodo,string grupo)
+        {
+
+            if (matcarr != "")
+            {
+
+                return dal.validadosmateriashorario(matcarr, horario, dia1, dia2, periodo,grupo);
+            }
+            else
+            {
+                MessageBox.Show("No se puede tener dos materias en el mismo horario.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
         public DataTable ConsultaCarrerainactivo(string carrera)
         {
 
@@ -1044,6 +1060,26 @@ namespace Kardex.Layers
                 MessageBox.Show("La calificacion se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
 
             }
+        }
+
+        public void Alta_rel_matcarr_horario(string matcarr, string horario, string dia1, string dia2, string periodo, string grupo)
+        {
+        
+
+                dal.Alta_rel_matcarr_horario(matcarr, horario, dia1, dia2, periodo, grupo);
+                MessageBox.Show("se dio de alta la relacion", "Aviso", MessageBoxButtons.OK);
+
+           
+        }
+
+        public DataTable llenadomatcar()
+        {
+            return dal.llenadomatcar();
+        }
+
+        public DataTable llenadogrupo()
+        {
+            return dal.llenadogrupo();
         }
     }
 }

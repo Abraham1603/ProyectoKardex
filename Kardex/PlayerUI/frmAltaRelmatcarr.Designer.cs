@@ -66,6 +66,7 @@
             this.gbConsultaCarrera.Size = new System.Drawing.Size(662, 285);
             this.gbConsultaCarrera.TabIndex = 5;
             this.gbConsultaCarrera.TabStop = false;
+            this.gbConsultaCarrera.Enter += new System.EventHandler(this.gbConsultaCarrera_Enter);
             // 
             // dtllenadoma
             // 
@@ -102,6 +103,7 @@
             this.cbcarreras.Name = "cbcarreras";
             this.cbcarreras.Size = new System.Drawing.Size(292, 28);
             this.cbcarreras.TabIndex = 25;
+            this.cbcarreras.SelectedIndexChanged += new System.EventHandler(this.cbcarreras_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

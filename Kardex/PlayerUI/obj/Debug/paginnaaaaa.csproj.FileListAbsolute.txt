@@ -249,3 +249,5 @@ C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\PlayerUI.ReactivarRelMarCa
 C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\paginnaaaaa.csproj.GenerateResource.cache
 C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\PlayerUI.exe
 C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\PlayerUI.pdb
+C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\PlayerUI.frmAlta_rel_matcarr_horario.resources
+C:\Users\Admin\source\repos\Kardex\PlayerUI\obj\Debug\PlayerUI.Alta_rel_matcarrhorario_maes.resources

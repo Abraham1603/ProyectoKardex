@@ -436,5 +436,12 @@ namespace PlayerUI
             frmmodificacalificacion f = new frmmodificacalificacion();
             f.Show();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            frmAlta_rel_matcarr_horario f1 = new frmAlta_rel_matcarr_horario();
+                f1.Show();
+            this.Hide();
+        }
     }
 }
