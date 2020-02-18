@@ -88,6 +88,7 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelCarreraAlumnoMaestro.SuspendLayout();
             this.panelCarreraMateria.SuspendLayout();
@@ -1176,6 +1177,7 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panelChildForm.Controls.Add(this.button14);
             this.panelChildForm.Controls.Add(this.button11);
             this.panelChildForm.Controls.Add(this.pictureBox9);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1204,6 +1206,16 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(852, 41);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Form1
             // 
@@ -1302,6 +1314,7 @@
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button14;
     }
 }
 

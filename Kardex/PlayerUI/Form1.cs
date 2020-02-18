@@ -443,5 +443,12 @@ namespace PlayerUI
                 f1.Show();
             this.Hide();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            frmConsultaRelmatcarr_horario f = new frmConsultaRelmatcarr_horario();
+            f.Show();
+            this.Hide();
+        }
     }
 }

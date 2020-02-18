@@ -169,6 +169,12 @@
     <Compile Include="frmConsultaRelmatalum.Designer.cs">
       <DependentUpon>frmConsultaRelmatalum.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaRelmatcarr-horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRelmatcarr-horario.Designer.cs">
+      <DependentUpon>frmConsultaRelmatcarr-horario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCosultaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaRelmatalum.resx">
       <DependentUpon>frmConsultaRelmatalum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRelmatcarr-horario.resx">
+      <DependentUpon>frmConsultaRelmatcarr-horario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCosultaAlumno.resx">
       <DependentUpon>frmCosultaAlumno.cs</DependentUpon>

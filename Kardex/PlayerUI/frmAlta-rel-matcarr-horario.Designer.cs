@@ -34,20 +34,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cbgrupo = new System.Windows.Forms.ComboBox();
             this.cbper = new System.Windows.Forms.ComboBox();
-            this.cbdia2 = new System.Windows.Forms.ComboBox();
-            this.cbdia1 = new System.Windows.Forms.ComboBox();
             this.cbhorario = new System.Windows.Forms.ComboBox();
             this.cbmatcarr = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtmatcarr = new System.Windows.Forms.DataGridView();
             this.dtper = new System.Windows.Forms.DataGridView();
             this.dtgrupo = new System.Windows.Forms.DataGridView();
             this.dtvalidamateriahorario = new System.Windows.Forms.DataGridView();
+            this.cbhorario2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtper)).BeginInit();
@@ -99,7 +97,7 @@
             // 
             this.cbgrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.cbgrupo.FormattingEnabled = true;
-            this.cbgrupo.Location = new System.Drawing.Point(584, 333);
+            this.cbgrupo.Location = new System.Drawing.Point(588, 297);
             this.cbgrupo.Name = "cbgrupo";
             this.cbgrupo.Size = new System.Drawing.Size(184, 33);
             this.cbgrupo.TabIndex = 27;
@@ -108,48 +106,15 @@
             // 
             this.cbper.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.cbper.FormattingEnabled = true;
-            this.cbper.Location = new System.Drawing.Point(584, 283);
+            this.cbper.Location = new System.Drawing.Point(588, 247);
             this.cbper.Name = "cbper";
             this.cbper.Size = new System.Drawing.Size(184, 33);
             this.cbper.TabIndex = 26;
-            // 
-            // cbdia2
-            // 
-            this.cbdia2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.cbdia2.FormattingEnabled = true;
-            this.cbdia2.Items.AddRange(new object[] {
-            "Lunes",
-            "Martes",
-            "Miercoles",
-            "Jueves",
-            "Viernes"});
-            this.cbdia2.Location = new System.Drawing.Point(584, 236);
-            this.cbdia2.Name = "cbdia2";
-            this.cbdia2.Size = new System.Drawing.Size(184, 33);
-            this.cbdia2.TabIndex = 25;
-            // 
-            // cbdia1
-            // 
-            this.cbdia1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.cbdia1.FormattingEnabled = true;
-            this.cbdia1.Items.AddRange(new object[] {
-            "Lunes",
-            "Martes",
-            "Miercoles",
-            "Jueves",
-            "Viernes"});
-            this.cbdia1.Location = new System.Drawing.Point(584, 189);
-            this.cbdia1.Name = "cbdia1";
-            this.cbdia1.Size = new System.Drawing.Size(184, 33);
-            this.cbdia1.TabIndex = 24;
             // 
             // cbhorario
             // 
             this.cbhorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.cbhorario.FormattingEnabled = true;
-            this.cbhorario.Items.AddRange(new object[] {
-            "1",
-            "2"});
             this.cbhorario.Location = new System.Drawing.Point(584, 146);
             this.cbhorario.Name = "cbhorario";
             this.cbhorario.Size = new System.Drawing.Size(184, 33);
@@ -161,14 +126,14 @@
             this.cbmatcarr.FormattingEnabled = true;
             this.cbmatcarr.Location = new System.Drawing.Point(584, 100);
             this.cbmatcarr.Name = "cbmatcarr";
-            this.cbmatcarr.Size = new System.Drawing.Size(184, 33);
+            this.cbmatcarr.Size = new System.Drawing.Size(342, 33);
             this.cbmatcarr.TabIndex = 22;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(491, 341);
+            this.label6.Location = new System.Drawing.Point(495, 305);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 25);
             this.label6.TabIndex = 21;
@@ -178,41 +143,21 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(474, 291);
+            this.label5.Location = new System.Drawing.Point(478, 255);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 25);
             this.label5.TabIndex = 20;
             this.label5.Text = "Periodo";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(500, 244);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 25);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Dia 2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(500, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 25);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Dia 1";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(478, 154);
+            this.label2.Location = new System.Drawing.Point(462, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 25);
+            this.label2.Size = new System.Drawing.Size(116, 25);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Horario";
+            this.label2.Text = "Horario 1:";
             // 
             // label1
             // 
@@ -255,17 +200,37 @@
             // dtvalidamateriahorario
             // 
             this.dtvalidamateriahorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvalidamateriahorario.Location = new System.Drawing.Point(30, 197);
+            this.dtvalidamateriahorario.Location = new System.Drawing.Point(185, 332);
             this.dtvalidamateriahorario.Name = "dtvalidamateriahorario";
             this.dtvalidamateriahorario.Size = new System.Drawing.Size(430, 303);
             this.dtvalidamateriahorario.TabIndex = 35;
-            this.dtvalidamateriahorario.Visible = false;
+            // 
+            // cbhorario2
+            // 
+            this.cbhorario2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.cbhorario2.FormattingEnabled = true;
+            this.cbhorario2.Location = new System.Drawing.Point(584, 197);
+            this.cbhorario2.Name = "cbhorario2";
+            this.cbhorario2.Size = new System.Drawing.Size(184, 33);
+            this.cbhorario2.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(462, 205);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 25);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Horario 2:";
             // 
             // frmAlta_rel_matcarr_horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 647);
+            this.Controls.Add(this.cbhorario2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dtvalidamateriahorario);
             this.Controls.Add(this.dtgrupo);
             this.Controls.Add(this.dtper);
@@ -276,14 +241,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbgrupo);
             this.Controls.Add(this.cbper);
-            this.Controls.Add(this.cbdia2);
-            this.Controls.Add(this.cbdia1);
             this.Controls.Add(this.cbhorario);
             this.Controls.Add(this.cbmatcarr);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAlta_rel_matcarr_horario";
@@ -307,19 +268,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cbgrupo;
         private System.Windows.Forms.ComboBox cbper;
-        private System.Windows.Forms.ComboBox cbdia2;
-        private System.Windows.Forms.ComboBox cbdia1;
         private System.Windows.Forms.ComboBox cbhorario;
         private System.Windows.Forms.ComboBox cbmatcarr;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dtmatcarr;
         private System.Windows.Forms.DataGridView dtper;
         private System.Windows.Forms.DataGridView dtgrupo;
         private System.Windows.Forms.DataGridView dtvalidamateriahorario;
+        private System.Windows.Forms.ComboBox cbhorario2;
+        private System.Windows.Forms.Label label3;
     }
 }

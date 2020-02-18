@@ -39,6 +39,14 @@ namespace Kardex.Layers
             
         }
 
+
+        public DataTable ConsultaRelmatcarr_horario()
+        {
+
+            return dal.ConsultaRelmatcarr_horario();
+           
+        }
+
         public void ActualizaCalificacion(int id, string cali, string uni)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
         {
             if (cali == "")
@@ -71,22 +79,28 @@ namespace Kardex.Layers
 
 
         }
-        public DataTable validadosmateriashorario(string matcarr,string horario,string  dia1,string dia2,string  periodo,string grupo)
+
+        public DataTable No_puede_tener_dos_materias_en_el_mismo_horario (string matcarr, string periodo, string grupo)
         {
 
             if (matcarr != "")
             {
 
-                return dal.validadosmateriashorario(matcarr, horario, dia1, dia2, periodo,grupo);
+                return dal.No_puede_tener_dos_materias_en_el_mismo_horario(matcarr,periodo,grupo);
             }
             else
             {
-                MessageBox.Show("No se puede tener dos materias en el mismo horario.", "Alerta", MessageBoxButtons.OK);
+                MessageBox.Show("Es necesario especificar una relacion de horario", "Alerta", MessageBoxButtons.OK);
                 return null;
             }
 
 
         }
+
+
+
+
+
         public DataTable ConsultaCarrerainactivo(string carrera)
         {
 
@@ -606,7 +620,7 @@ namespace Kardex.Layers
         * 
         * */
 
-        public void AltaAlumno(string nombre, string direccion, string telefono, string fecha,string carrera, string user, string pass)
+        public void AltaAlumno(string nombre, string direccion, string telefono, string fecha,string carrera,string campus, string grupo)
         {
             if (nombre == "")
             {
@@ -620,7 +634,7 @@ namespace Kardex.Layers
                 }
                 else
                 {
-                    dal.AltaAlumno(nombre, direccion, telefono,fecha, carrera, user, pass);
+                    dal.AltaAlumno(nombre, direccion, telefono,fecha, carrera,campus,grupo);
                     MessageBox.Show("El Alumno se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
                 }
             }
@@ -881,6 +895,12 @@ namespace Kardex.Layers
         {
             return dal.lleadoca();
         }
+
+        public DataTable llenadocampus()
+        {
+            return dal.llenadocampus();
+        }
+
         public DataTable llenadoma()
         {
             return dal.lleadoma();
@@ -1036,16 +1056,19 @@ namespace Kardex.Layers
 
             }
         }
+       
         public DataTable llenadorma()
         {
             return dal.llenadorma();
         }
+       
         public DataTable ConsultaCalificacion()
         {
 
             return dal.ConsultaCalificacion();
 
         }
+       
         public void AltaCalificacion(string id, string cali, string uni)
         {
             if (id == "")
@@ -1062,11 +1085,11 @@ namespace Kardex.Layers
             }
         }
 
-        public void Alta_rel_matcarr_horario(string matcarr, string horario, string dia1, string dia2, string periodo, string grupo)
+        public void Alta_rel_matcarr_horario(string matcarr, string horario, string horario2, string periodo, string grupo)
         {
         
 
-                dal.Alta_rel_matcarr_horario(matcarr, horario, dia1, dia2, periodo, grupo);
+                dal.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
                 MessageBox.Show("se dio de alta la relacion", "Aviso", MessageBoxButtons.OK);
 
            
@@ -1080,6 +1103,11 @@ namespace Kardex.Layers
         public DataTable llenadogrupo()
         {
             return dal.llenadogrupo();
+        }
+
+        public DataTable llenadohorario()
+        {
+            return dal.llenadohorario();
         }
     }
 }

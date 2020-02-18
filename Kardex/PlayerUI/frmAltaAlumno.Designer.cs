@@ -32,12 +32,10 @@
             this.gbAltaAlumno = new System.Windows.Forms.GroupBox();
             this.dtllenadoca = new System.Windows.Forms.DataGridView();
             this.dtca = new System.Windows.Forms.DataGridView();
-            this.txtpass = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpfechanac = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.cbcarrera = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtdireccion = new System.Windows.Forms.TextBox();
@@ -48,23 +46,35 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtgrupo = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbgrupo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbcampus = new System.Windows.Forms.ComboBox();
+            this.dtcampus = new System.Windows.Forms.DataGridView();
             this.gbAltaAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrupo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtcampus)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAltaAlumno
             // 
             this.gbAltaAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaAlumno.Controls.Add(this.dtcampus);
+            this.gbAltaAlumno.Controls.Add(this.label5);
+            this.gbAltaAlumno.Controls.Add(this.cbcampus);
+            this.gbAltaAlumno.Controls.Add(this.label3);
+            this.gbAltaAlumno.Controls.Add(this.cbgrupo);
+            this.gbAltaAlumno.Controls.Add(this.dtgrupo);
             this.gbAltaAlumno.Controls.Add(this.dtllenadoca);
             this.gbAltaAlumno.Controls.Add(this.dtca);
-            this.gbAltaAlumno.Controls.Add(this.txtpass);
             this.gbAltaAlumno.Controls.Add(this.label8);
             this.gbAltaAlumno.Controls.Add(this.dtpfechanac);
             this.gbAltaAlumno.Controls.Add(this.label7);
             this.gbAltaAlumno.Controls.Add(this.cbcarrera);
-            this.gbAltaAlumno.Controls.Add(this.label5);
             this.gbAltaAlumno.Controls.Add(this.txttelefono);
             this.gbAltaAlumno.Controls.Add(this.label4);
             this.gbAltaAlumno.Controls.Add(this.txtdireccion);
@@ -75,9 +85,9 @@
             this.gbAltaAlumno.Controls.Add(this.btnGuardar);
             this.gbAltaAlumno.Controls.Add(this.txtnombre);
             this.gbAltaAlumno.Controls.Add(this.label2);
-            this.gbAltaAlumno.Location = new System.Drawing.Point(1, 1);
+            this.gbAltaAlumno.Location = new System.Drawing.Point(1, 12);
             this.gbAltaAlumno.Name = "gbAltaAlumno";
-            this.gbAltaAlumno.Size = new System.Drawing.Size(788, 406);
+            this.gbAltaAlumno.Size = new System.Drawing.Size(788, 395);
             this.gbAltaAlumno.TabIndex = 7;
             this.gbAltaAlumno.TabStop = false;
             this.gbAltaAlumno.Enter += new System.EventHandler(this.gbAltaAlumno_Enter);
@@ -85,29 +95,21 @@
             // dtllenadoca
             // 
             this.dtllenadoca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtllenadoca.Location = new System.Drawing.Point(300, 347);
+            this.dtllenadoca.Location = new System.Drawing.Point(29, 283);
             this.dtllenadoca.Name = "dtllenadoca";
-            this.dtllenadoca.Size = new System.Drawing.Size(56, 59);
+            this.dtllenadoca.Size = new System.Drawing.Size(10, 10);
             this.dtllenadoca.TabIndex = 28;
             this.dtllenadoca.Visible = false;
             // 
             // dtca
             // 
             this.dtca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtca.Location = new System.Drawing.Point(6, 333);
+            this.dtca.Location = new System.Drawing.Point(11, 283);
             this.dtca.Name = "dtca";
-            this.dtca.Size = new System.Drawing.Size(240, 150);
+            this.dtca.Size = new System.Drawing.Size(10, 10);
             this.dtca.TabIndex = 26;
             this.dtca.TabStop = false;
             this.dtca.Visible = false;
-            // 
-            // txtpass
-            // 
-            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.Location = new System.Drawing.Point(451, 249);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(233, 29);
-            this.txtpass.TabIndex = 6;
             // 
             // label8
             // 
@@ -149,17 +151,6 @@
             this.cbcarrera.Size = new System.Drawing.Size(233, 32);
             this.cbcarrera.TabIndex = 5;
             this.cbcarrera.SelectedIndexChanged += new System.EventHandler(this.cbcarrera_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(255, 249);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 25);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Contraseña";
             // 
             // txttelefono
             // 
@@ -264,6 +255,66 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
+            // dtgrupo
+            // 
+            this.dtgrupo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrupo.Location = new System.Drawing.Point(45, 283);
+            this.dtgrupo.Name = "dtgrupo";
+            this.dtgrupo.Size = new System.Drawing.Size(11, 10);
+            this.dtgrupo.TabIndex = 29;
+            this.dtgrupo.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(262, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 25);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Grupo:";
+            // 
+            // cbgrupo
+            // 
+            this.cbgrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbgrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbgrupo.FormattingEnabled = true;
+            this.cbgrupo.Location = new System.Drawing.Point(451, 295);
+            this.cbgrupo.Name = "cbgrupo";
+            this.cbgrupo.Size = new System.Drawing.Size(233, 32);
+            this.cbgrupo.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(262, 259);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Campus:";
+            // 
+            // cbcampus
+            // 
+            this.cbcampus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcampus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbcampus.FormattingEnabled = true;
+            this.cbcampus.Location = new System.Drawing.Point(451, 252);
+            this.cbcampus.Name = "cbcampus";
+            this.cbcampus.Size = new System.Drawing.Size(233, 32);
+            this.cbcampus.TabIndex = 32;
+            // 
+            // dtcampus
+            // 
+            this.dtcampus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtcampus.Location = new System.Drawing.Point(62, 283);
+            this.dtcampus.Name = "dtcampus";
+            this.dtcampus.Size = new System.Drawing.Size(11, 10);
+            this.dtcampus.TabIndex = 34;
+            this.dtcampus.Visible = false;
+            // 
             // frmAltaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +331,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrupo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtcampus)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,12 +340,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbAltaAlumno;
-        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtpfechanac;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbcarrera;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtdireccion;
@@ -305,5 +356,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtca;
         private System.Windows.Forms.DataGridView dtllenadoca;
+        private System.Windows.Forms.DataGridView dtgrupo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbgrupo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbcampus;
+        private System.Windows.Forms.DataGridView dtcampus;
     }
 }
