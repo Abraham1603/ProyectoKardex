@@ -74,6 +74,39 @@ namespace PlayerUI
             {
                 cbgrupo.Items.Add(dt2.Rows[i]["grupo"]);
             }
+
+
+            DataTable dt3 = bl.llenadohorario();
+
+            if (dt3.Rows.Count > 0)
+            {
+                dtmatcarr.DataSource = dt3;
+            }
+            else
+            {
+                MessageBox.Show("No hay horarios ", "Aviso", MessageBoxButtons.OK);
+            }
+
+            for (int i = 0; i < dt3.Rows.Count; i++)
+            {
+                cbhorario.Items.Add(dt3.Rows[i]["horario"]);
+            }
+
+            DataTable dt4 = bl.llenadohorario();
+
+            if (dt4.Rows.Count > 0)
+            {
+                dtmatcarr.DataSource = dt4;
+            }
+            else
+            {
+                MessageBox.Show("No hay horarios ", "Aviso", MessageBoxButtons.OK);
+            }
+
+            for (int i = 0; i < dt4.Rows.Count; i++)
+            {
+                cbhorario2.Items.Add(dt4.Rows[i]["horario"]);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,29 +114,42 @@ namespace PlayerUI
 
             string matcarr = cbmatcarr.SelectedItem.ToString();
             string horario = cbhorario.SelectedItem.ToString();
-            string dia1 = cbdia1.SelectedItem.ToString();
-            string dia2 = cbdia2.SelectedItem.ToString();
+            string horario2 = cbhorario2.SelectedItem.ToString();
             string periodo = cbper.SelectedItem.ToString();
             string grupo = cbgrupo.SelectedItem.ToString();
 
 
-            DataTable dt = bl.validadosmateriashorario(matcarr,horario,dia1,dia2,periodo,grupo);
+            DataTable dt = bl.No_puede_tener_dos_materias_en_el_mismo_horario(matcarr, periodo, grupo);
             if (dt.Rows.Count > 0)
             {
                 dtvalidamateriahorario.DataSource = dt;
-                string a = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[0].Value.ToString());
+                string a = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[1].Value.ToString());
+                string a2 = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[2].Value.ToString());
+                string b = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[3].Value.ToString());
+                string c = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[4].Value.ToString());
 
-                if (a == matcarr)
+                int c1;
+                int c2;
+
+                if (a == horario || a2 == horario2)
                 {
-                    MessageBox.Show("La carrera ya existe");
+                    MessageBox.Show("No puede haber dos materias en el mismo horario");
+
+                }
+                else if (b == periodo)
+                {
+                    MessageBox.Show("No puede tener dos veces una materia en el mismo periodo");
+
                 }
 
             }
-            //else
-            //{
-            //    bl.Alta_rel_matcarr_horario(matcarr, horario,dia1,dia2,periodo,grupo);
+            else
+            {
+                bl.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
+            }
 
-            //}
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

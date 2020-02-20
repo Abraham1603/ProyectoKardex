@@ -127,6 +127,12 @@
     <Compile Include="frmAltaRelmatcarr.Designer.cs">
       <DependentUpon>frmAltaRelmatcarr.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAlta_rel_matcatt_horario_alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlta_rel_matcatt_horario_alumno.Designer.cs">
+      <DependentUpon>frmAlta_rel_matcatt_horario_alumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,18 @@
     </Compile>
     <Compile Include="frmConsultaRelmatalum.Designer.cs">
       <DependentUpon>frmConsultaRelmatalum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaRelmatcarr-horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRelmatcarr-horario.Designer.cs">
+      <DependentUpon>frmConsultaRelmatcarr-horario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsulta_relmatcarr_horario_alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_relmatcarr_horario_alumno.Designer.cs">
+      <DependentUpon>frmConsulta_relmatcarr_horario_alumno.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCosultaAlumno.cs">
       <SubType>Form</SubType>
@@ -321,6 +339,9 @@
     <EmbeddedResource Include="frmAltaRelmatcarr.resx">
       <DependentUpon>frmAltaRelmatcarr.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAlta_rel_matcatt_horario_alumno.resx">
+      <DependentUpon>frmAlta_rel_matcatt_horario_alumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaAlumno.resx">
       <DependentUpon>frmConsultaAlumno.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +362,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaRelmatalum.resx">
       <DependentUpon>frmConsultaRelmatalum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRelmatcarr-horario.resx">
+      <DependentUpon>frmConsultaRelmatcarr-horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulta_relmatcarr_horario_alumno.resx">
+      <DependentUpon>frmConsulta_relmatcarr_horario_alumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCosultaAlumno.resx">
       <DependentUpon>frmCosultaAlumno.cs</DependentUpon>

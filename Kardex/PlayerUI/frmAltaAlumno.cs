@@ -42,6 +42,38 @@ namespace PlayerUI
             {
                 cbcarrera.Items.Add(dt.Rows[i]["carrera"]);
             }
+
+            DataTable dt2 = bl.llenadogrupo();
+
+            if (dt2.Rows.Count > 0)
+            {
+                dtgrupo.DataSource = dt2;
+            }
+            else
+            {
+                MessageBox.Show("No  hay grupos ", "Aviso", MessageBoxButtons.OK);
+            }
+
+            for (int i = 0; i < dt2.Rows.Count; i++)
+            {
+                cbgrupo.Items.Add(dt2.Rows[i]["grupo"]);
+            }
+
+            DataTable dt3 = bl.llenadocampus();
+
+            if (dt3.Rows.Count > 0)
+            {
+                dtcampus.DataSource = dt3;
+            }
+            else
+            {
+                MessageBox.Show("No  hay campus ", "Aviso", MessageBoxButtons.OK);
+            }
+
+            for (int i = 0; i < dt3.Rows.Count; i++)
+            {
+                cbcampus.Items.Add(dt3.Rows[i]["campus"]);
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -52,9 +84,11 @@ namespace PlayerUI
             DateTime fechaalta = Convert.ToDateTime(dtpfechanac.Value.ToString());
             string fe = Convert.ToString(fechaalta);
             string carrera = cbcarrera.SelectedItem.ToString();
-            string pass = txtpass.Text.ToString();
+            string campus = cbcampus.SelectedItem.ToString();
+            string grupo = cbgrupo.SelectedItem.ToString();
+
             string fecha = Convert.ToString(fechaalta);
-            string user = "Alumno";
+            
 
              DataTable dt = bl.validaalumno(nombre);
              if (dt.Rows.Count > 0)
@@ -70,7 +104,7 @@ namespace PlayerUI
              }
              else
              {
-                bl.AltaAlumno(nombre, direccion, telefono, fe, carrera, user, pass);
+                bl.AltaAlumno(nombre, direccion, telefono, fecha, carrera,campus,grupo);
 
             }
             

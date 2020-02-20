@@ -23,13 +23,11 @@ namespace PlayerUI
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string idrma = cbrma.SelectedItem.ToString();
-            string cali = txtcali.Text;
-            string uni = txtunidad.Text;
+            
 
-            bl.AltaCalificacion(idrma, cali, uni);
+            bl.AltaCalificacion(idrma);
 
-            txtcali.Clear();
-            txtunidad.Clear();
+         
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -41,7 +39,7 @@ namespace PlayerUI
 
         private void frmaltacalificacion_Load(object sender, EventArgs e)
         {
-            DataTable dt = bl.llenadorma();
+            DataTable dt = bl.llenadomatcarr_horario_alumno();
 
             if (dt.Rows.Count > 0)
             {
@@ -54,7 +52,7 @@ namespace PlayerUI
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                cbrma.Items.Add(dt.Rows[i]["id_relmatalum"]);
+                cbrma.Items.Add(dt.Rows[i]["Materia - Carrera - Alumno - Grupo"]);
             }
         }
 
