@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbgrupo = new System.Windows.Forms.ComboBox();
@@ -46,11 +45,12 @@
             this.dtvalidamateriahorario = new System.Windows.Forms.DataGridView();
             this.cbhorario2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrupo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvalidamateriahorario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -62,14 +62,6 @@
             this.label7.Size = new System.Drawing.Size(381, 31);
             this.label7.TabIndex = 31;
             this.label7.Text = "Alta Materia Carrera Horario";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 74);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 277);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
@@ -200,9 +192,9 @@
             // dtvalidamateriahorario
             // 
             this.dtvalidamateriahorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvalidamateriahorario.Location = new System.Drawing.Point(185, 332);
+            this.dtvalidamateriahorario.Location = new System.Drawing.Point(88, 361);
             this.dtvalidamateriahorario.Name = "dtvalidamateriahorario";
-            this.dtvalidamateriahorario.Size = new System.Drawing.Size(430, 303);
+            this.dtvalidamateriahorario.Size = new System.Drawing.Size(10, 12);
             this.dtvalidamateriahorario.TabIndex = 35;
             // 
             // cbhorario2
@@ -223,6 +215,14 @@
             this.label3.Size = new System.Drawing.Size(116, 25);
             this.label3.TabIndex = 36;
             this.label3.Text = "Horario 2:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(233, 277);
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
             // 
             // frmAlta_rel_matcarr_horario
             // 
@@ -250,11 +250,11 @@
             this.Name = "frmAlta_rel_matcarr_horario";
             this.Text = "frmAlta_rel_matcarr_horario";
             this.Load += new System.EventHandler(this.frmAlta_rel_matcarr_horario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrupo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvalidamateriahorario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -47,9 +47,17 @@ namespace Kardex.Layers
            
         }
 
-        public void ActualizaCalificacion(int id, string cali, string uni)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+
+        public DataTable ConsultaRelmatcarr_horario_alumno()
         {
-            if (cali == "")
+
+            return dal.ConsultaRelmatcarr_horario_alumno();
+
+        }
+
+        public void ActualizaCalificacion(string id, string p1, string p2,string p3, string cf)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (p1 == "" || p2 == "" || p3 == "" || cf == "")
             {
                 MessageBox.Show("Favor de escoger bien la calificacion a modificar", "Alerta", MessageBoxButtons.OK);
 
@@ -57,7 +65,7 @@ namespace Kardex.Layers
             else
             {
 
-                dal.ActualizaCalificacion(id, cali, uni);//, fechaalta, fechabaja, estatus);
+                dal.ActualizaCalificacion(id, p1,p2,p3,cf);//, fechaalta, fechabaja, estatus);
                 MessageBox.Show("La calificacion se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
 
             }
@@ -1069,7 +1077,7 @@ namespace Kardex.Layers
 
         }
        
-        public void AltaCalificacion(string id, string cali, string uni)
+        public void AltaCalificacion(string id)
         {
             if (id == "")
             {
@@ -1079,7 +1087,7 @@ namespace Kardex.Layers
             else
             {
 
-                dal.AltaCalificacion(id, cali, uni);
+                dal.AltaCalificacion(id);
                 MessageBox.Show("La calificacion se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
 
             }
@@ -1095,9 +1103,29 @@ namespace Kardex.Layers
            
         }
 
+        public void Alta_rel_matcarr_horario_alumno(string matcarr, string alumno)
+        {
+
+
+            dal.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
+            MessageBox.Show("se dio de alta la relacion", "Aviso", MessageBoxButtons.OK);
+
+
+        }
+
         public DataTable llenadomatcar()
         {
             return dal.llenadomatcar();
+        }
+
+        public DataTable llenadomatcarr_horario()
+        {
+            return dal.llenadomatcarr_horario();
+        }
+
+        public DataTable llenadomatcarr_horario_alumno()
+        {
+            return dal.llenadomatcarr_horario_alumno();
         }
 
         public DataTable llenadogrupo()

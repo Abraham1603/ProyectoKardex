@@ -450,5 +450,19 @@ namespace PlayerUI
             f.Show();
             this.Hide();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            frmAlta_rel_matcatt_horario_alumno f = new frmAlta_rel_matcatt_horario_alumno();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            frmConsulta_relmatcarr_horario_alumno f = new frmConsulta_relmatcarr_horario_alumno();
+            f.Show();
+            this.Hide();
+        }
     }
 }

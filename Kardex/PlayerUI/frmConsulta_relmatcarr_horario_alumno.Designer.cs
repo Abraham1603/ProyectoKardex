@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class frmConsultaRelmatcarr_horario
+    partial class frmConsulta_relmatcarr_horario_alumno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaRelmatcarr_horario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsulta_relmatcarr_horario_alumno));
             this.gbConsultaCarrera = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,18 +47,18 @@
             this.gbConsultaCarrera.Controls.Add(this.label6);
             this.gbConsultaCarrera.Controls.Add(this.btnConsultaCarrera);
             this.gbConsultaCarrera.Controls.Add(this.dgvCarrera);
-            this.gbConsultaCarrera.Location = new System.Drawing.Point(-56, -19);
+            this.gbConsultaCarrera.Location = new System.Drawing.Point(11, 11);
             this.gbConsultaCarrera.Margin = new System.Windows.Forms.Padding(2);
             this.gbConsultaCarrera.Name = "gbConsultaCarrera";
             this.gbConsultaCarrera.Padding = new System.Windows.Forms.Padding(2);
-            this.gbConsultaCarrera.Size = new System.Drawing.Size(912, 488);
-            this.gbConsultaCarrera.TabIndex = 4;
+            this.gbConsultaCarrera.Size = new System.Drawing.Size(1086, 488);
+            this.gbConsultaCarrera.TabIndex = 5;
             this.gbConsultaCarrera.TabStop = false;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(778, 394);
+            this.button1.Location = new System.Drawing.Point(939, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 46);
             this.button1.TabIndex = 4;
@@ -70,7 +70,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(667, 115);
+            this.pictureBox1.Location = new System.Drawing.Point(833, 115);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 240);
             this.pictureBox1.TabIndex = 16;
@@ -81,16 +81,16 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(101, 25);
+            this.label6.Location = new System.Drawing.Point(22, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(898, 41);
+            this.label6.Size = new System.Drawing.Size(1044, 41);
             this.label6.TabIndex = 7;
-            this.label6.Text = "CONSULTAR RELACION MATERIA-CARRERA-HORARIO";
+            this.label6.Text = "CONSULTAR RELACION MATERIA-CARRERA-HORARIO-Alumno";
             // 
             // btnConsultaCarrera
             // 
             this.btnConsultaCarrera.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaCarrera.Location = new System.Drawing.Point(648, 394);
+            this.btnConsultaCarrera.Location = new System.Drawing.Point(807, 394);
             this.btnConsultaCarrera.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultaCarrera.Name = "btnConsultaCarrera";
             this.btnConsultaCarrera.Size = new System.Drawing.Size(117, 46);
@@ -111,17 +111,17 @@
             this.dgvCarrera.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvCarrera.Location = new System.Drawing.Point(29, 115);
             this.dgvCarrera.Name = "dgvCarrera";
-            this.dgvCarrera.Size = new System.Drawing.Size(598, 347);
+            this.dgvCarrera.Size = new System.Drawing.Size(772, 347);
             this.dgvCarrera.TabIndex = 0;
             // 
-            // frmConsultaRelmatcarr_horario
+            // frmConsulta_relmatcarr_horario_alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1079, 537);
+            this.ClientSize = new System.Drawing.Size(1244, 784);
             this.Controls.Add(this.gbConsultaCarrera);
-            this.Name = "frmConsultaRelmatcarr_horario";
-            this.Text = "frmConsultaRelmatcarr_horario";
+            this.Name = "frmConsulta_relmatcarr_horario_alumno";
+            this.Text = "frmConsulta_relmatcarr_horario_alumno";
             this.gbConsultaCarrera.ResumeLayout(false);
             this.gbConsultaCarrera.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

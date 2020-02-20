@@ -21,15 +21,23 @@ namespace PlayerUI
 
         private void btnModificarCarrera_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtid.Text);
-            string cali = txtcali.Text;
-            string uni = txtuni.Text;
+            string id = txtid.Text;
+            string c1 = p1.Text;
+            string c2 = p2.Text;
+            string c3 = p3.Text;
+            string calf = cf.Text;
 
-            bl.ActualizaCalificacion(id, cali, uni);
+
+
+            bl.ActualizaCalificacion(id, c1,c2,c3,calf);
 
             txtid.Clear();
-            txtcali.Clear();
-            txtuni.Clear();
+            txtal.Clear();
+            p1.Clear();
+            p2.Clear();
+            p3.Clear();
+            cf.Clear();
+
 
             DataTable dt = bl.ConsultaCalificacion();
 
@@ -74,8 +82,11 @@ namespace PlayerUI
         private void dtcali_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtid.Text = dtcali.CurrentRow.Cells[0].Value.ToString();
-            txtcali.Text = dtcali.CurrentRow.Cells[2].Value.ToString();
-            txtuni.Text = dtcali.CurrentRow.Cells[3].Value.ToString();
+            txtal.Text = dtcali.CurrentRow.Cells[1].Value.ToString();
+            p1.Text = dtcali.CurrentRow.Cells[2].Value.ToString();
+            p2.Text = dtcali.CurrentRow.Cells[3].Value.ToString();
+            p3.Text = dtcali.CurrentRow.Cells[4].Value.ToString();
+            cf.Text = dtcali.CurrentRow.Cells[5].Value.ToString();
 
         }
 
@@ -94,6 +105,30 @@ namespace PlayerUI
             {
                 e.Handled = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            float op;
+            float op2;
+
+            float c1 = float.Parse(p1.Text);
+            float c2 = float.Parse(p2.Text);
+            float c3 = float.Parse(p3.Text);
+
+            op = c1 + c2 + c3;
+            op2 = op / 3;
+            
+            if((Convert.ToInt32(p1.Text) < 0) || (Convert.ToInt32(p2.Text) < 0) || (Convert.ToInt32(p3.Text) < 0))
+            {
+                MessageBox.Show("Ingresa valores mayores a 0");
+            }
+            else
+            {
+                cf.Text = Convert.ToString(op2);
+            }
+          
         }
     }
 }

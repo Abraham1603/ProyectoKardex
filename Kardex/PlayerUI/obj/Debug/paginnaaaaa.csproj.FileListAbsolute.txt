@@ -297,3 +297,5 @@ C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\paginna
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.exe
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.pdb
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmConsultaRelmatcarr_horario.resources
+C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmAlta_rel_matcatt_horario_alumno.resources
+C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmConsulta_relmatcarr_horario_alumno.resources

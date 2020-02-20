@@ -51,11 +51,30 @@ namespace Kardex.Layers
             return dt;
         }
 
-        public void ActualizaCalificacion(int id, string cali, string uni)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        public DataTable ConsultaRelmatcarr_horario_alumno()
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "ConsultaRelmatcarr_horario_alumno ";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+        public void ActualizaCalificacion(string id, string p1, string p2,string p3, string cf)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
         {
             try
             {
-                string query = "ActualizaCalificacion '" + id + "','" + cali + "','" + uni + "'"; // + "," + fechaalta + "," + fechabaja + "," + estatus;
+                string query = "ActualizaCalificacion '" + id + "','" + p1 + "','" + p2 + "','" + p3 + "','" + cf + "'"; // + "," + fechaalta + "," + fechabaja + "," + estatus;
 
                 conn.ExcQry(query);
             }
@@ -1072,11 +1091,11 @@ namespace Kardex.Layers
 
             return dt;
         }
-        public void AltaCalificacion(string id, string cali, string uni)
+        public void AltaCalificacion(string id)
         {
             try
             {
-                string query = "AltaCalificaciones '" + id + "','" + cali + "','" + uni + "'";
+                string query = "AltaCalificaciones '" + id + "'";
                 conn.ExcQry(query);
             }
             catch (Exception ex)
@@ -1102,7 +1121,21 @@ namespace Kardex.Layers
         }
 
 
-  
+
+        public void Alta_rel_matcarr_horario_alumno(string matcarr, string alumno)
+        {
+            try
+            {
+                string query = "Alta_rel_matcarr_horario_alumno '" + matcarr + "','" + alumno + "'";
+                conn.ExcQry(query);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
 
         public DataTable llenadorma()
         {
@@ -1141,6 +1174,46 @@ namespace Kardex.Layers
 
             return dt;
         }
+
+        public DataTable llenadomatcarr_horario()
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "llenadomatcarr_horario ";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+
+        public DataTable llenadomatcarr_horario_alumno()
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "llenadomatcarr_horario_alumno ";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
 
 
         public DataTable llenadogrupo()

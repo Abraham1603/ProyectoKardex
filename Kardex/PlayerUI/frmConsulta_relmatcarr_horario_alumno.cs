@@ -11,37 +11,30 @@ using Kardex.Layers;
 
 namespace PlayerUI
 {
-    public partial class frmConsultaRelmatcarr_horario : Form
+    public partial class frmConsulta_relmatcarr_horario_alumno : Form
     {
         BL bl = new BL();
 
-        public frmConsultaRelmatcarr_horario()
+        public frmConsulta_relmatcarr_horario_alumno()
         {
             InitializeComponent();
-        }
-
-        private void cbTodas_CheckedChanged(object sender, EventArgs e)
-        {
-          
         }
 
         private void btnConsultaCarrera_Click(object sender, EventArgs e)
         {
             dgvCarrera.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10);
 
+            DataTable dt = bl.ConsultaRelmatcarr_horario_alumno();
 
-        
-                DataTable dt = bl.ConsultaRelmatcarr_horario();
+            if (dt.Rows.Count > 0)
+            {
+                dgvCarrera.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("No hay carreras activas", "Aviso", MessageBoxButtons.OK);
+            }
 
-                if (dt.Rows.Count > 0)
-                {
-                    dgvCarrera.DataSource = dt;
-                }
-                else
-                {
-                    MessageBox.Show("No hay carreras activas", "Aviso", MessageBoxButtons.OK);
-                }
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
