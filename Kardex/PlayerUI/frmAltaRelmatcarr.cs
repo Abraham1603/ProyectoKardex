@@ -23,9 +23,10 @@ namespace PlayerUI
         {
             string materia = cbmateria.SelectedItem.ToString();
             string carrera = cbcarreras.SelectedItem.ToString();
+            string campus = cbcampus.SelectedItem.ToString();
 
 
-            bl.Altarmc(carrera, materia);
+            bl.Altarmc(carrera, materia,campus);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -68,6 +69,23 @@ namespace PlayerUI
             for (int i = 0; i < dtma.Rows.Count; i++)
             {
                 cbmateria.Items.Add(dtma.Rows[i]["materia"]);
+            }
+
+
+            DataTable dt3 = bl.llenadocampus();
+
+            if (dt3.Rows.Count > 0)
+            {
+                dtcampus.DataSource = dt3;
+            }
+            else
+            {
+                MessageBox.Show("No  hay campus ", "Aviso", MessageBoxButtons.OK);
+            }
+
+            for (int i = 0; i < dt3.Rows.Count; i++)
+            {
+                cbcampus.Items.Add(dt3.Rows[i]["campus"]);
             }
         }
 

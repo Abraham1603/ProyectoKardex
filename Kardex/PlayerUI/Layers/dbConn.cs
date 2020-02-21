@@ -14,7 +14,7 @@ namespace Kardex.Layers
     class dbConn
     {
         SqlConnection conn;
-
+         
         //DAL d = new DAL();
 
         public dbConn()
