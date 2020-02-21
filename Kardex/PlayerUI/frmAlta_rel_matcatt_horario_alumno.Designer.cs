@@ -38,11 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtalumno = new System.Windows.Forms.DataGridView();
             this.dtmatcarr = new System.Windows.Forms.DataGridView();
-            this.dtvalida = new System.Windows.Forms.DataGridView();
+            this.dtvalida2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtalumno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvalida)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvalida2)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -141,20 +141,20 @@
             this.dtmatcarr.TabIndex = 50;
             this.dtmatcarr.Visible = false;
             // 
-            // dtvalida
+            // dtvalida2
             // 
-            this.dtvalida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvalida.Location = new System.Drawing.Point(34, 370);
-            this.dtvalida.Name = "dtvalida";
-            this.dtvalida.Size = new System.Drawing.Size(879, 150);
-            this.dtvalida.TabIndex = 52;
+            this.dtvalida2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvalida2.Location = new System.Drawing.Point(50, 392);
+            this.dtvalida2.Name = "dtvalida2";
+            this.dtvalida2.Size = new System.Drawing.Size(832, 128);
+            this.dtvalida2.TabIndex = 52;
             // 
             // frmAlta_rel_matcatt_horario_alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 566);
-            this.Controls.Add(this.dtvalida);
+            this.Controls.Add(this.dtvalida2);
             this.Controls.Add(this.dtalumno);
             this.Controls.Add(this.dtmatcarr);
             this.Controls.Add(this.label7);
@@ -171,7 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtalumno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvalida)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvalida2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +189,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dtalumno;
         private System.Windows.Forms.DataGridView dtmatcarr;
-        private System.Windows.Forms.DataGridView dtvalida;
+        private System.Windows.Forms.DataGridView dtvalida2;
     }
 }

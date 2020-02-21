@@ -98,6 +98,77 @@ namespace Kardex.Layers
             }
         }
 
+        public DataTable ConsultaGrupo(string carrera)
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "ConsultaGrupo '" + carrera + "'";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+
+
+        public void AltaGrupo(string carrera, string fecha)
+        {
+            try
+            {
+                string query = "AltaGrupo '" + carrera + "','" + fecha + "'";
+                conn.ExcQry(query);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
+
+        public void Altacampus(string carrera, string fecha)
+        {
+            try
+            {
+                string query = "Altacampus '" + carrera + "','" + fecha + "'";
+                conn.ExcQry(query);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
+
+        public DataTable ConsultaCampus(string carrera)
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "ConsultaCampus '" + carrera + "'";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+
 
 
         public DataTable ConsultaMaestro(string carrera)
@@ -843,13 +914,13 @@ namespace Kardex.Layers
             }
 
             return dt;
-        }
+        }   
 
-        public void Altarmc(string carrera, string materia)
+        public void Altarmc(string carrera, string materia,string campus)
         {
             try
             {
-                string query = "AltaMateriaCarrera '" + materia + "','" + carrera + "'";
+                string query = "AltaMateriaCarrera '" + materia + "','" + carrera + "','" + campus + "'";
                 conn.ExcQry(query);
 
             }
@@ -1264,6 +1335,26 @@ namespace Kardex.Layers
                 //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
                 //Para ejecutarlo posteriormente.
                 query = "No_puede_tener_dos_materias_en_el_mismo_horario '" + matcarr + "','" + periodo + "','" + grupo + "'";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+
+        public DataTable No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada(string matcarr, string alumno)
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada '" + matcarr + "','" + alumno + "'";
                 dt = conn.ExcQryDt(query);
             }
             catch (Exception ex)

@@ -13,6 +13,105 @@ namespace Kardex.Layers
     {
         DAL dal = new DAL();
 
+        public DataTable validagrupo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaGrupo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el grupo.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+
+        public void AltaGrupo(string carrera, string fecha)
+        {
+            if (carrera == "")
+            {
+                MessageBox.Show("Es necesario especificar el nombre del grupo", "Alerta", MessageBoxButtons.OK);
+            }
+            else
+            {
+                if (fecha == "")
+                {
+                    MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    dal.AltaGrupo(carrera, fecha);
+                    MessageBox.Show("El Grupo se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
+                }
+            }
+        }
+        public void Altacampus(string carrera, string fecha)
+        {
+            if (carrera == "")
+            {
+                MessageBox.Show("Es necesario especificar el nombre del Campus", "Alerta", MessageBoxButtons.OK);
+            }
+            else
+            {
+                if (fecha == "")
+                {
+                    MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    dal.Altacampus(carrera, fecha);
+                    MessageBox.Show("El campus se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
+                }
+            }
+        }
+
+
+        public void BajaCampus(string carrera)
+        {
+            if (carrera != "")
+            {
+
+               // dal.BajaCampus(carrera);
+                MessageBox.Show("El Campus Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona un Campus.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+
+
+        public DataTable validacampus(string materia)
+        {
+
+            if (materia != "")
+            {
+
+                return dal.ConsultaCampus(materia);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el Campus.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+
+
 
         /*AQUI EMPIEZA LOS PROCESOS DE CARRERA
          * 
@@ -106,6 +205,23 @@ namespace Kardex.Layers
         }
 
 
+
+        public DataTable No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada(string matcarr, string alumno)
+        {
+
+            if (matcarr != "")
+            {
+
+                return dal.No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada(matcarr, alumno);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar una relacion de horario", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
 
 
 
@@ -914,7 +1030,7 @@ namespace Kardex.Layers
             return dal.lleadoma();
         }
 
-        public void Altarmc(string carrera, string materia)
+        public void Altarmc(string carrera, string materia,string campus)
         {
             if (carrera == "" || materia == "")
             {
@@ -923,7 +1039,7 @@ namespace Kardex.Layers
             }
             else
             {
-                dal.Altarmc(carrera, materia);
+                dal.Altarmc(carrera, materia,campus);
                 MessageBox.Show("La relacion se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
             }
         }

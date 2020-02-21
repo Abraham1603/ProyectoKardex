@@ -27,25 +27,32 @@ namespace PlayerUI
 
 
 
-          //  DataTable dt = bl.No_debe_permitir_asignar_una_materia_que_ya_está_aprobada(matcarr, alumno);
-            //if (dt.Rows.Count > 0)
-            //{
-            //    dtvalida.DataSource = dt;
-            //    string a = Convert.ToString(dtvalida.Rows[0].Cells[1].Value.ToString());
-            //    string b = Convert.ToString(dtvalida.Rows[0].Cells[2].Value.ToString());
-          
+            DataTable dt = bl.No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada(matcarr, alumno);
+            if (dt.Rows.Count > 0)
+            {
+                dtvalida2.DataSource = dt;
+                string a = Convert.ToString(dtvalida2.Rows[0].Cells[2].Value.ToString());
+                string b = Convert.ToString(dtvalida2.Rows[0].Cells[1].Value.ToString());
+
+                float val = float.Parse(a);
+
+                if (val > 7)
+                {
+                    MessageBox.Show("No debe permitir asignar una materia que ya está aprobada");
+                }
+                else
+                {
+                    //bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
+                    MessageBox.Show("ess");
+                }
 
 
-            //    if (a == matcarr)
-            //    {
-            //        MessageBox.Show("No se debe permitir asignar una materia que ya está aprobada");
-            //    }
-       
-            //}
-            //else
-            //{
-            //    bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
-            //}
+            }
+            else
+            {
+                //bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
+                MessageBox.Show("ess");
+            }
 
 
         }
@@ -90,6 +97,11 @@ namespace PlayerUI
             Form1 f = new Form1();
             f.Show();
             this.Hide();
+
+        }
+
+        private void dtvalida_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

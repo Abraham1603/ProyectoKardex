@@ -91,11 +91,23 @@
     <Compile Include="frmaltacalificacion.Designer.cs">
       <DependentUpon>frmaltacalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAltaCampus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaCampus.Designer.cs">
+      <DependentUpon>frmAltaCampus.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAltaCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAltaCarrera.Designer.cs">
       <DependentUpon>frmAltaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaGrupos.Designer.cs">
+      <DependentUpon>frmAltaGrupos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAltaMaestro.cs">
       <SubType>Form</SubType>
@@ -144,6 +156,12 @@
     </Compile>
     <Compile Include="frmconsultacalificaciones.Designer.cs">
       <DependentUpon>frmconsultacalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaCampus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCampus.Designer.cs">
+      <DependentUpon>frmConsultaCampus.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultaCarrera.cs">
       <SubType>Form</SubType>
@@ -321,8 +339,14 @@
     <EmbeddedResource Include="frmaltacalificacion.resx">
       <DependentUpon>frmaltacalificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaCampus.resx">
+      <DependentUpon>frmAltaCampus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAltaCarrera.resx">
       <DependentUpon>frmAltaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaGrupos.resx">
+      <DependentUpon>frmAltaGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaMaestro.resx">
       <DependentUpon>FrmAltaMaestro.cs</DependentUpon>
@@ -347,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmconsultacalificaciones.resx">
       <DependentUpon>frmconsultacalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCampus.resx">
+      <DependentUpon>frmConsultaCampus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCarrera.resx">
       <DependentUpon>frmConsultaCarrera.cs</DependentUpon>

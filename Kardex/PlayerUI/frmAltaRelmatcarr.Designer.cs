@@ -40,14 +40,21 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbcampus = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtcampus = new System.Windows.Forms.DataGridView();
             this.gbConsultaCarrera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtcampus)).BeginInit();
             this.SuspendLayout();
             // 
             // gbConsultaCarrera
             // 
+            this.gbConsultaCarrera.Controls.Add(this.dtcampus);
+            this.gbConsultaCarrera.Controls.Add(this.cbcampus);
+            this.gbConsultaCarrera.Controls.Add(this.label1);
             this.gbConsultaCarrera.Controls.Add(this.dtllenadoma);
             this.gbConsultaCarrera.Controls.Add(this.dtllenadoca);
             this.gbConsultaCarrera.Controls.Add(this.cbmateria);
@@ -90,7 +97,7 @@
             // 
             this.cbmateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbmateria.FormattingEnabled = true;
-            this.cbmateria.Location = new System.Drawing.Point(335, 145);
+            this.cbmateria.Location = new System.Drawing.Point(335, 120);
             this.cbmateria.Name = "cbmateria";
             this.cbmateria.Size = new System.Drawing.Size(292, 28);
             this.cbmateria.TabIndex = 26;
@@ -99,7 +106,7 @@
             // 
             this.cbcarreras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbcarreras.FormattingEnabled = true;
-            this.cbcarreras.Location = new System.Drawing.Point(335, 102);
+            this.cbcarreras.Location = new System.Drawing.Point(335, 77);
             this.cbcarreras.Name = "cbcarreras";
             this.cbcarreras.Size = new System.Drawing.Size(292, 28);
             this.cbcarreras.TabIndex = 25;
@@ -153,7 +160,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(230, 142);
+            this.label3.Location = new System.Drawing.Point(230, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 25);
             this.label3.TabIndex = 19;
@@ -164,11 +171,40 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(230, 99);
+            this.label2.Location = new System.Drawing.Point(230, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 17;
             this.label2.Text = "Carrera:";
+            // 
+            // cbcampus
+            // 
+            this.cbcampus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcampus.FormattingEnabled = true;
+            this.cbcampus.Location = new System.Drawing.Point(335, 163);
+            this.cbcampus.Name = "cbcampus";
+            this.cbcampus.Size = new System.Drawing.Size(292, 28);
+            this.cbcampus.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(230, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Campus:";
+            // 
+            // dtcampus
+            // 
+            this.dtcampus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtcampus.Location = new System.Drawing.Point(82, 217);
+            this.dtcampus.Name = "dtcampus";
+            this.dtcampus.Size = new System.Drawing.Size(10, 15);
+            this.dtcampus.TabIndex = 30;
+            this.dtcampus.Visible = false;
             // 
             // frmAltaRelmatcarr
             // 
@@ -187,6 +223,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtllenadoca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtcampus)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,5 +241,8 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dtcampus;
+        private System.Windows.Forms.ComboBox cbcampus;
+        private System.Windows.Forms.Label label1;
     }
 }
