@@ -302,3 +302,5 @@ C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerU
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmAltaCampus.resources
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmAltaGrupos.resources
 C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmConsultaCampus.resources
+C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.frmModificacion_rel_matcarr_horario.resources
+C:\Users\Admin\Documents\Kardex\ProyectoKardex\Kardex\PlayerUI\obj\Debug\PlayerUI.ReactivarRel_Matcarr_horario.resources

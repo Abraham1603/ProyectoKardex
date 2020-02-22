@@ -11,18 +11,21 @@ using Kardex.Layers;
 
 namespace PlayerUI
 {
-    public partial class frmConsultaRelmatcarr_horario : Form
+    public partial class ReactivarRel_Matcarr_horario : Form
     {
         BL bl = new BL();
-
-        public frmConsultaRelmatcarr_horario()
+        public ReactivarRel_Matcarr_horario()
         {
             InitializeComponent();
         }
 
+        
+
+        
+
         private void cbTodas_CheckedChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnConsultaCarrera_Click(object sender, EventArgs e)
@@ -30,18 +33,18 @@ namespace PlayerUI
             dgvCarrera.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10);
 
 
-        
-                DataTable dt = bl.ConsultaRelmatcarr_horario();
 
-                if (dt.Rows.Count > 0)
-                {
-                    dgvCarrera.DataSource = dt;
-                }
-                else
-                {
-                    MessageBox.Show("No hay carreras activas", "Aviso", MessageBoxButtons.OK);
-                }
-            
+            DataTable dt = bl.ConsultaRelmatcarr_horarioinactivo();
+
+            if (dt.Rows.Count > 0)
+            {
+                dgvCarrera.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("No hay carreras activas", "Aviso", MessageBoxButtons.OK);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,17 +54,26 @@ namespace PlayerUI
             this.Hide();
         }
 
-        private void dgvCarrera_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+       
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
+            this.Hide();
+        }
+
+        private void dgvCarrera_CellContentDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             string eliminar = dgvCarrera.CurrentRow.Cells[0].Value.ToString();
 
 
-            if (MessageBox.Show("Seguro que quieres dar de baja esta relacion?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Seguro que quieres dar de alta esta relacion?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                bl.BajaRelmatcarr_horario(eliminar);
+                bl.ReactivarRelmatcarr_horario(eliminar);
 
-                DataTable dt = bl.ConsultaRelmatcarr_horario();
-               
+                DataTable dt = bl.ConsultaRelmatcarr_horarioinactivo();
+
                 if (dt.Rows.Count > 0)
                 {
                     dgvCarrera.DataSource = dt;

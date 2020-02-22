@@ -86,11 +86,13 @@
             this.panelPlayer = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelCarreraAlumnoMaestro.SuspendLayout();
             this.panelCarreraMateria.SuspendLayout();
@@ -1179,6 +1181,8 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panelChildForm.Controls.Add(this.button19);
+            this.panelChildForm.Controls.Add(this.button18);
             this.panelChildForm.Controls.Add(this.button17);
             this.panelChildForm.Controls.Add(this.button15);
             this.panelChildForm.Controls.Add(this.button14);
@@ -1189,6 +1193,16 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(939, 447);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(819, 70);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(120, 33);
+            this.button18.TabIndex = 7;
+            this.button18.Text = "ModiRELMATCAR";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click_1);
             // 
             // button17
             // 
@@ -1240,6 +1254,16 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(852, 109);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.TabIndex = 8;
+            this.button19.Text = "Reactiv  ";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // Form1
             // 
@@ -1341,6 +1365,8 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
     }
 }
 

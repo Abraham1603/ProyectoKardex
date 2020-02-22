@@ -42,16 +42,15 @@ namespace PlayerUI
                 }
                 else
                 {
-                    //bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
-                    MessageBox.Show("ess");
+                    bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
+                  
                 }
 
 
             }
             else
             {
-                //bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
-                MessageBox.Show("ess");
+                bl.Alta_rel_matcarr_horario_alumno(matcarr, alumno);
             }
 
 

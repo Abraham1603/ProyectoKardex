@@ -469,5 +469,19 @@ namespace PlayerUI
         {
            
         }
+
+        private void button18_Click_1(object sender, EventArgs e)
+        {
+            frmModificacion_rel_matcarr_horario f = new frmModificacion_rel_matcarr_horario();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            ReactivarRel_Matcarr_horario f = new ReactivarRel_Matcarr_horario();
+            f.Show();
+            this.Hide();
+        }
     }
 }
