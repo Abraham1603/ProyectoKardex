@@ -51,6 +51,31 @@ namespace Kardex.Layers
             return dt;
         }
 
+
+
+        public DataTable ConsultaRelmatcarr_horarioinactivo()
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro carrera
+                //Para ejecutarlo posteriormente.
+                query = "ConsultaRelmatcarr_horarioinactivo ";
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+
+
+
+
         public DataTable ConsultaRelmatcarr_horario_alumno()
         {
             string query;
@@ -444,6 +469,26 @@ namespace Kardex.Layers
 
 
 
+        public void ReactivarRelmatcarr_horario(string carrera)
+        {
+            try
+            {
+                string query = "ReactivarRelmatcarr_horario '" + carrera + "'";
+                conn.ExcQry(query);
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+
+        }
+
+
+
+
         public void ReactivarRelmatalum(string carrera)
         {
             try
@@ -671,6 +716,27 @@ namespace Kardex.Layers
 
             
         }
+
+
+
+        public void BajaRelmatcarr_horario(string carrera)
+        {
+            try
+            {
+                string query = "BajaRelmatcarr_horario '" + carrera + "'";
+                conn.ExcQry(query);
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+
+        }
+
+
 
         public void BajaMaestro(string carrera)
         {
@@ -943,6 +1009,23 @@ namespace Kardex.Layers
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
             }
         }
+
+
+        public void Actualizarel_matcarr_horario(string id, string matcarr, string horario, string horario2, string periodo, string grupo)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            try
+            {
+                string query = "Actualizarel_matcarr_horario '" + id + "','" + matcarr + "','" + horario + "','" + horario2 + "','" + periodo + "','" + grupo + "'"; // + "," + fechaalta + "," + fechabaja + "," + estatus;
+
+                conn.ExcQry(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
+
 
         public DataTable relrmcmateria(string rmc)
         {

@@ -229,6 +229,12 @@
     <Compile Include="frmModificaCarrera.Designer.cs">
       <DependentUpon>frmModificaCarrera.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificacion_rel_matcarr_horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificacion_rel_matcarr_horario.Designer.cs">
+      <DependentUpon>frmModificacion_rel_matcarr_horario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModificaMaestro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +330,12 @@
     <Compile Include="ReactivarRelMarCar.Designer.cs">
       <DependentUpon>ReactivarRelMarCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReactivarRel_Matcarr_horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactivarRel_Matcarr_horario.Designer.cs">
+      <DependentUpon>ReactivarRel_Matcarr_horario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Alta-rel-matcarrhorario-maes.resx">
       <DependentUpon>Alta-rel-matcarrhorario-maes.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,6 +420,9 @@
     <EmbeddedResource Include="frmModificaCarrera.resx">
       <DependentUpon>frmModificaCarrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificacion_rel_matcarr_horario.resx">
+      <DependentUpon>frmModificacion_rel_matcarr_horario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModificaMaestro.resx">
       <DependentUpon>FrmModificaMaestro.cs</DependentUpon>
     </EmbeddedResource>
@@ -462,6 +477,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReactivarRelMarCar.resx">
       <DependentUpon>ReactivarRelMarCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactivarRel_Matcarr_horario.resx">
+      <DependentUpon>ReactivarRel_Matcarr_horario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -91,6 +91,24 @@ namespace Kardex.Layers
 
 
 
+
+
+
+        public void BajaRelmatcarr_horario(string carrera)
+        {
+            
+
+                 dal.BajaRelmatcarr_horario(carrera);
+                MessageBox.Show("La relacion Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            
+        }
+
+
+
+
+
+
         public DataTable validacampus(string materia)
         {
 
@@ -144,6 +162,13 @@ namespace Kardex.Layers
 
             return dal.ConsultaRelmatcarr_horario();
            
+        }
+
+        public DataTable ConsultaRelmatcarr_horarioinactivo()
+        {
+
+            return dal.ConsultaRelmatcarr_horarioinactivo();
+
         }
 
 
@@ -276,6 +301,25 @@ namespace Kardex.Layers
 
             }
         }
+
+
+        public void ReactivarRelmatcarr_horario(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.ReactivarRelmatcarr_horario(carrera);
+                MessageBox.Show("La Relacion Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona una relacion.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+
 
         public void ReactivarRelmatalum(string carrera)
         {
@@ -1059,6 +1103,26 @@ namespace Kardex.Layers
 
             }
         }
+
+
+
+        public void Actualizarel_matcarr_horario(string id, string matcarr, string horario, string horario2, string periodo, string grupo)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (matcarr == "")
+            {
+                MessageBox.Show("Favor de Ingresar un valor ", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+
+                dal.Actualizarel_matcarr_horario(id, matcarr, horario, horario2, periodo, grupo);//, fechaalta, fechabaja, estatus);
+                MessageBox.Show("Se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+
+            }
+        }
+
+
 
         public DataTable relrmcmateria(string materia)
         {
