@@ -86,13 +86,15 @@
             this.panelPlayer = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button19 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelCarreraAlumnoMaestro.SuspendLayout();
             this.panelCarreraMateria.SuspendLayout();
@@ -1181,6 +1183,8 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panelChildForm.Controls.Add(this.button22);
+            this.panelChildForm.Controls.Add(this.button20);
             this.panelChildForm.Controls.Add(this.button19);
             this.panelChildForm.Controls.Add(this.button18);
             this.panelChildForm.Controls.Add(this.button17);
@@ -1193,6 +1197,26 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(939, 447);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(809, 217);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 23);
+            this.button20.TabIndex = 9;
+            this.button20.Text = "button20";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(852, 109);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.TabIndex = 8;
+            this.button19.Text = "Reactiv  ";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -1255,15 +1279,15 @@
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
             // 
-            // button19
+            // button22
             // 
-            this.button19.Location = new System.Drawing.Point(852, 109);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 8;
-            this.button19.Text = "Reactiv  ";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button22.Location = new System.Drawing.Point(809, 246);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(118, 44);
+            this.button22.TabIndex = 10;
+            this.button22.Text = "Reactiv  ";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // Form1
             // 
@@ -1367,6 +1391,8 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button22;
     }
 }
 

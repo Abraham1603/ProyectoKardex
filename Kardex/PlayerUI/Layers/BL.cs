@@ -31,7 +31,15 @@ namespace Kardex.Layers
         }
 
 
+        public void BajaRelmatcarr_horario_alumno(string carrera)
+        {
 
+
+            dal.BajaRelmatcarr_horario_alumno(carrera);
+            MessageBox.Show("La relacion Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
 
         public void AltaGrupo(string carrera, string fecha)
         {
@@ -172,6 +180,15 @@ namespace Kardex.Layers
         }
 
 
+        public DataTable ConsultaRelmatcarr_horario_alumnoinactivo()
+        {
+
+            return dal.ConsultaRelmatcarr_horario_alumnoinactivo();
+
+        }
+
+
+
         public DataTable ConsultaRelmatcarr_horario_alumno()
         {
 
@@ -309,6 +326,23 @@ namespace Kardex.Layers
             {
 
                 dal.ReactivarRelmatcarr_horario(carrera);
+                MessageBox.Show("La Relacion Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona una relacion.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+
+        public void ReactivarRelmatcarr_horario_alumno(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.ReactivarRelmatcarr_horario_alumno(carrera);
                 MessageBox.Show("La Relacion Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -1121,6 +1155,23 @@ namespace Kardex.Layers
 
             }
         }
+
+        public void Actualizarel_matcarr_horario_alumno(string id, string matcarr, string horario)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (matcarr == "")
+            {
+                MessageBox.Show("Favor de Ingresar un valor ", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+
+                dal.Actualizarel_matcarr_horario_alumno(id, matcarr, horario);//, fechaalta, fechabaja, estatus);
+                MessageBox.Show("Se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+
+            }
+        }
+
 
 
 
