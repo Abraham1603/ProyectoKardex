@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class frmConsulta_relmatcarr_horario_alumno
+    partial class ReactivarRel_Matcarr_horario_alumno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsulta_relmatcarr_horario_alumno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReactivarRel_Matcarr_horario_alumno));
             this.gbConsultaCarrera = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,7 +52,7 @@
             this.gbConsultaCarrera.Name = "gbConsultaCarrera";
             this.gbConsultaCarrera.Padding = new System.Windows.Forms.Padding(2);
             this.gbConsultaCarrera.Size = new System.Drawing.Size(1086, 488);
-            this.gbConsultaCarrera.TabIndex = 5;
+            this.gbConsultaCarrera.TabIndex = 6;
             this.gbConsultaCarrera.TabStop = false;
             // 
             // button1
@@ -64,7 +64,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // pictureBox1
             // 
@@ -83,9 +83,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(22, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1044, 41);
+            this.label6.Size = new System.Drawing.Size(1033, 41);
             this.label6.TabIndex = 7;
-            this.label6.Text = "CONSULTAR RELACION MATERIA-CARRERA-HORARIO-Alumno";
+            this.label6.Text = "REACTIVAR RELACION MATERIA-CARRERA-HORARIO-Alumno";
             // 
             // btnConsultaCarrera
             // 
@@ -97,7 +97,7 @@
             this.btnConsultaCarrera.TabIndex = 3;
             this.btnConsultaCarrera.Text = "Consulta";
             this.btnConsultaCarrera.UseVisualStyleBackColor = true;
-            this.btnConsultaCarrera.Click += new System.EventHandler(this.btnConsultaCarrera_Click);
+            this.btnConsultaCarrera.Click += new System.EventHandler(this.btnConsultaCarrera_Click_1);
             // 
             // dgvCarrera
             // 
@@ -115,14 +115,16 @@
             this.dgvCarrera.TabIndex = 0;
             this.dgvCarrera.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarrera_CellContentDoubleClick);
             // 
-            // frmConsulta_relmatcarr_horario_alumno
+            // ReactivarRel_Matcarr_horario_alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 784);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.ClientSize = new System.Drawing.Size(1114, 514);
             this.Controls.Add(this.gbConsultaCarrera);
-            this.Name = "frmConsulta_relmatcarr_horario_alumno";
-            this.Text = "frmConsulta_relmatcarr_horario_alumno";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ReactivarRel_Matcarr_horario_alumno";
+            this.Text = "ReactivarRel_Matcarr_horario_alumno";
             this.gbConsultaCarrera.ResumeLayout(false);
             this.gbConsultaCarrera.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

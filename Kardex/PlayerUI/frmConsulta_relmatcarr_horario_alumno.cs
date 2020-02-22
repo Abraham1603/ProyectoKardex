@@ -43,5 +43,28 @@ namespace PlayerUI
             f.Show();
             this.Hide();
         }
+
+        private void dgvCarrera_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string eliminar = dgvCarrera.CurrentRow.Cells[0].Value.ToString();
+
+
+            if (MessageBox.Show("Seguro que quieres dar de baja esta relacion?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                bl.BajaRelmatcarr_horario_alumno(eliminar);
+
+                DataTable dt = bl.ConsultaRelmatcarr_horario_alumno();
+
+                if (dt.Rows.Count > 0)
+                {
+                    dgvCarrera.DataSource = dt;
+                }
+                else
+                {
+                    MessageBox.Show("No hay periodos activos", "Aviso", MessageBoxButtons.OK);
+                }
+
+            }
+        }
     }
 }
