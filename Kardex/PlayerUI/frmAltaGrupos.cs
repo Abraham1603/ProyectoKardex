@@ -47,11 +47,30 @@ namespace PlayerUI
                 {
                     MessageBox.Show("El grupo ya existe");
                 }
-
+                MessageBox.Show("El grupo ya existe");
             }
             else
             {
-                bl.AltaGrupo(carrera, fecha);
+
+
+                DataTable dt2 = bl.validagrupoinactivo(carrera);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == carrera)
+                    {
+                        MessageBox.Show("El grupo ya existe y se encuentra dada de baja");
+                    }
+                    MessageBox.Show("El grupo ya existe y se encuentra dada de baja");
+
+                }
+                else
+                {
+                    bl.AltaGrupo(carrera, fecha);
+                }
+                
 
 
             }

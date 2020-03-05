@@ -39,6 +39,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtalumno = new System.Windows.Forms.DataGridView();
             this.dtmatcarr = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtalumno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtmatcarr)).BeginInit();
@@ -54,9 +55,9 @@
             this.dgvCarrera.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvCarrera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCarrera.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvCarrera.Location = new System.Drawing.Point(14, 52);
+            this.dgvCarrera.Location = new System.Drawing.Point(12, 88);
             this.dgvCarrera.Name = "dgvCarrera";
-            this.dgvCarrera.Size = new System.Drawing.Size(493, 276);
+            this.dgvCarrera.Size = new System.Drawing.Size(485, 248);
             this.dgvCarrera.TabIndex = 1;
             this.dgvCarrera.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarrera_CellContentClick);
             // 
@@ -74,6 +75,7 @@
             // 
             // cbmatcarr
             // 
+            this.cbmatcarr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbmatcarr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.cbmatcarr.FormattingEnabled = true;
             this.cbmatcarr.Location = new System.Drawing.Point(711, 142);
@@ -93,6 +95,7 @@
             // 
             // cbalumno
             // 
+            this.cbalumno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbalumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.cbalumno.FormattingEnabled = true;
             this.cbalumno.Location = new System.Drawing.Point(711, 201);
@@ -142,6 +145,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(47, 29);
             this.textBox1.TabIndex = 57;
+            this.textBox1.Visible = false;
             // 
             // dtalumno
             // 
@@ -161,12 +165,24 @@
             this.dtmatcarr.TabIndex = 58;
             this.dtmatcarr.Visible = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(32, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(967, 41);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "MODIFICACION RELACION MATERIA-CARRERA-HORARIO";
+            // 
             // frmModificacion_rel_matcarr_horario_alumnocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1024, 530);
+            this.ClientSize = new System.Drawing.Size(1055, 505);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dtalumno);
             this.Controls.Add(this.dtmatcarr);
             this.Controls.Add(this.textBox1);
@@ -180,6 +196,7 @@
             this.Controls.Add(this.dgvCarrera);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmModificacion_rel_matcarr_horario_alumnocs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmModificacion_rel_matcarr_horario_alumnocs";
             this.Load += new System.EventHandler(this.frmModificacion_rel_matcarr_horario_alumnocs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrera)).EndInit();
@@ -203,5 +220,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dtalumno;
         private System.Windows.Forms.DataGridView dtmatcarr;
+        private System.Windows.Forms.Label label6;
     }
 }

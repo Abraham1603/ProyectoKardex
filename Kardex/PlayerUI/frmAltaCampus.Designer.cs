@@ -42,14 +42,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.gbAltaCarrera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAltaCarrera
             // 
             this.gbAltaCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaCarrera.Controls.Add(this.dtca2);
             this.gbAltaCarrera.Controls.Add(this.txtubicacion);
             this.gbAltaCarrera.Controls.Add(this.label1);
             this.gbAltaCarrera.Controls.Add(this.textBox1);
@@ -133,6 +136,7 @@
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Regresar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // btnGuardar
             // 
@@ -184,6 +188,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Campus:";
             // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(182, 179);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(172, 99);
+            this.dtca2.TabIndex = 20;
+            this.dtca2.Visible = false;
+            // 
             // frmAltaCampus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +210,7 @@
             this.gbAltaCarrera.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,5 +230,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCarrera;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

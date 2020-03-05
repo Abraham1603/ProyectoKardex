@@ -39,14 +39,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtMateria = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.gbAltaCarrera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAltaCarrera
             // 
             this.gbAltaCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaCarrera.Controls.Add(this.dtca2);
             this.gbAltaCarrera.Controls.Add(this.dtma);
             this.gbAltaCarrera.Controls.Add(this.pictureBox1);
             this.gbAltaCarrera.Controls.Add(this.label6);
@@ -156,6 +159,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Materia:";
             // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(106, 191);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(89, 78);
+            this.dtca2.TabIndex = 17;
+            this.dtca2.Visible = false;
+            // 
             // frmAltaMateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +182,7 @@
             this.gbAltaCarrera.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,5 +199,6 @@
         private System.Windows.Forms.TextBox txtMateria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtma;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

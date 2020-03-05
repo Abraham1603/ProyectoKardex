@@ -19,23 +19,7 @@ namespace PlayerUI
             InitializeComponent();
         }
 
-        private void btnConsultaCarrera_Click(object sender, EventArgs e)
-        {
-
-        }
-
         
-        
-
-
-
-
-
-        private void cbTodas_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         
         private void button1_Click(object sender, EventArgs e)
         {

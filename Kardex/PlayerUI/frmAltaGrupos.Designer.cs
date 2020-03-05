@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaGrupos));
             this.gbAltaCarrera = new System.Windows.Forms.GroupBox();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtca = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,6 +42,7 @@
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gbAltaCarrera.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,7 @@
             // gbAltaCarrera
             // 
             this.gbAltaCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaCarrera.Controls.Add(this.dtca2);
             this.gbAltaCarrera.Controls.Add(this.textBox1);
             this.gbAltaCarrera.Controls.Add(this.dtca);
             this.gbAltaCarrera.Controls.Add(this.pictureBox1);
@@ -63,6 +66,15 @@
             this.gbAltaCarrera.Size = new System.Drawing.Size(698, 315);
             this.gbAltaCarrera.TabIndex = 7;
             this.gbAltaCarrera.TabStop = false;
+            // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(161, 186);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(172, 99);
+            this.dtca2.TabIndex = 19;
+            this.dtca2.Visible = false;
             // 
             // textBox1
             // 
@@ -146,6 +158,7 @@
             // 
             // txtCarrera
             // 
+            this.txtCarrera.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarrera.Location = new System.Drawing.Point(363, 96);
             this.txtCarrera.Name = "txtCarrera";
@@ -175,6 +188,7 @@
             this.Text = "frmAltaGrupos";
             this.gbAltaCarrera.ResumeLayout(false);
             this.gbAltaCarrera.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -194,5 +208,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCarrera;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

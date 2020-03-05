@@ -110,7 +110,19 @@ namespace PlayerUI
 
             if (MessageBox.Show("Seguro que quieres reactivar este Periodo?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                bl.ReactivarPeriodo(eliminar);
+                DataTable dt2 = bl.ConsultaPeriodo("todas");
+                cbTodas.Checked = true;
+                if (dt2.Rows.Count > 0)
+                {
+                    MessageBox.Show("Ya existe un periodo Activo", "Aviso", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    bl.ReactivarPeriodo(eliminar);
+
+                }
+
+                
 
                 DataTable dt = bl.ConsultaPeriodoinactivo("todas");
                 cbTodas.Checked = true;

@@ -65,7 +65,28 @@ namespace PlayerUI
             }
             else
             {
-                bl.AltaMaestro(nombre,direccion, telefono, pass, fecha );
+
+
+
+                DataTable dt2 = bl.validamaestroinactivo(nombre);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == nombre)
+                    {
+                        MessageBox.Show("El Maestro ya existe y se encuentra dada de baja");
+                    }
+
+                    MessageBox.Show("El Maestro ya existe y se encuentra dada de baja");
+
+                }
+                else
+                {
+                    bl.AltaMaestro(nombre, direccion, telefono, pass, fecha);
+                }
+                
 
             }
 

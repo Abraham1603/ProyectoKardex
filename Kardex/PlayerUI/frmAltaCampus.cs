@@ -41,7 +41,24 @@ namespace PlayerUI
             }
             else
             {
-                bl.Altacampus(campus, ubicacion);
+
+                DataTable dt2 = bl.validacampusinactivo(campus);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == campus)
+                    {
+                        MessageBox.Show("El campus ya existe y se encuentra dada de baja");
+                    }
+
+                }
+                else
+                {
+                    bl.Altacampus(campus, ubicacion);
+                }
+                
 
             }
 
@@ -66,6 +83,11 @@ namespace PlayerUI
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
         {
             this.Hide();
 
