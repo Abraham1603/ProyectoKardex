@@ -124,6 +124,7 @@
             this.Controls.Add(this.gbConsultaCarrera);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReactivarRel_Matcarr_horario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReactivarRel_Matcarr_horario";
             this.gbConsultaCarrera.ResumeLayout(false);
             this.gbConsultaCarrera.PerformLayout();

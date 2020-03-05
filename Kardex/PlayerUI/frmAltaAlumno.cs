@@ -104,7 +104,28 @@ namespace PlayerUI
              }
              else
              {
-                bl.AltaAlumno(nombre, direccion, telefono, fecha, carrera,campus,grupo);
+
+
+                DataTable dt2 = bl.validaalumnoinactivo2(nombre);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == carrera)
+                    {
+                        MessageBox.Show("El alumno ya existe y se encuentra dada de baja");
+                    }
+
+                      MessageBox.Show("El alumno ya existe y se encuentra dada de baja");
+
+                }
+                else
+                {
+                    bl.AltaAlumno(nombre, direccion, telefono, fecha, carrera, campus, grupo);
+                }
+
+
 
             }
             

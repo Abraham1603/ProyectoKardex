@@ -20,7 +20,7 @@ namespace Kardex.Layers
         public dbConn()
         {
             //Se le asigna al objeto de SqlConnection la direccion de la instancia de la BD
-            conn = new SqlConnection("server=DESKTOP-AOLLFTJ; database=Kardex ; integrated security =true");
+            conn = new SqlConnection("server=DESKTOP-2BBG8OF; database=Kardex ; integrated security =true");
 
         }
 

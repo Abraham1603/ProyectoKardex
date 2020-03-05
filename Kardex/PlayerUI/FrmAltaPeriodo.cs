@@ -28,21 +28,44 @@ namespace PlayerUI
             string fecha = Convert.ToString(fechaalta);
 
 
-            DataTable dt = bl.validaperiodo(carrera);
+            DataTable dt = bl.validaperiodo("todas");
             if (dt.Rows.Count > 0)
             {
                 dtca.DataSource = dt;
-                string a = Convert.ToString(dtca.Rows[0].Cells[0].Value.ToString());
+                /*string a = Convert.ToString(dtca.Rows[0].Cells[0].Value.ToString());
 
                 if (a == carrera)
                 {
                     MessageBox.Show("El Periodo ya existe");
-                }
-
+                }*/
+                MessageBox.Show("No pueden existir mas de un periodo activo");
             }
             else
             {
-                bl.AltaPeriodo(carrera, fecha);
+
+
+
+                DataTable dt2 = bl.validaperiodoinactivo(carrera);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == carrera)
+                    {
+                        MessageBox.Show("El Periodo ya existe y se encuentra dada de baja");
+                    }
+
+                    MessageBox.Show("El Periodo ya existe y se encuentra dada de baja");
+
+                }
+                else
+                {
+                    bl.AltaPeriodo(carrera, fecha);
+                }
+
+               
+
 
             }
 

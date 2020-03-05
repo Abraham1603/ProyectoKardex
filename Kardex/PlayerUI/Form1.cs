@@ -39,6 +39,13 @@ namespace PlayerUI
             panelCaliSubMenu.Visible = false;
             panelCarreraMateria.Visible = false;
             panelCarreraAlumnoMaestro.Visible = false;
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel5.Visible = false;
+                
+
 
         }
 
@@ -439,30 +446,22 @@ namespace PlayerUI
 
         private void button11_Click(object sender, EventArgs e)
         {
-            frmAlta_rel_matcarr_horario f1 = new frmAlta_rel_matcarr_horario();
-                f1.Show();
-            this.Hide();
+            
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            frmConsultaRelmatcarr_horario f = new frmConsultaRelmatcarr_horario();
-            f.Show();
-            this.Hide();
+            
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            frmAlta_rel_matcatt_horario_alumno f = new frmAlta_rel_matcatt_horario_alumno();
-            f.Show();
-            this.Hide();
+           
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            frmConsulta_relmatcarr_horario_alumno f = new frmConsulta_relmatcarr_horario_alumno();
-            f.Show();
-            this.Hide();
+            
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -472,28 +471,205 @@ namespace PlayerUI
 
         private void button18_Click_1(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void ModuloCampus(object sender, EventArgs e)
+        {
+            showSubMenu(panel1);
+        }
+
+        private void ModuloGrupo(object sender, EventArgs e)
+        {
+            showSubMenu(panel2);
+        }
+
+      // private void alumno(object sender, EventArgs e)
+        //{
+            
+       // }
+
+        private void Maestro(object sender, EventArgs e)
+        {
+            showSubMenu(panel4);
+        }
+
+        private void Horario(object sender, EventArgs e)
+        {
+            showSubMenu(panel5);
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            frmAlta_rel_matcarr_horario f1 = new frmAlta_rel_matcarr_horario();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            frmConsultaRelmatcarr_horario f = new frmConsultaRelmatcarr_horario();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
             frmModificacion_rel_matcarr_horario f = new frmModificacion_rel_matcarr_horario();
             f.Show();
             this.Hide();
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void button63_Click(object sender, EventArgs e)
         {
             ReactivarRel_Matcarr_horario f = new ReactivarRel_Matcarr_horario();
             f.Show();
             this.Hide();
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void alumnoo(object sender, EventArgs e)
+        {
+            showSubMenu(panel3);
+        }
+
+        private void maestroo(object sender, EventArgs e)
+        {
+            showSubMenu(panel4);
+        }
+
+        private void horarioo(object sender, EventArgs e)
+        {
+            showSubMenu(panel5);
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            frmAlta_rel_matcatt_horario_alumno f = new frmAlta_rel_matcatt_horario_alumno();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            frmConsulta_relmatcarr_horario_alumno f = new frmConsulta_relmatcarr_horario_alumno();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button48_Click(object sender, EventArgs e)
         {
             frmModificacion_rel_matcarr_horario_alumnocs f = new frmModificacion_rel_matcarr_horario_alumnocs();
             f.Show();
             this.Hide();
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void button61_Click(object sender, EventArgs e)
         {
             ReactivarRel_Matcarr_horario_alumno f = new ReactivarRel_Matcarr_horario_alumno();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            frmAlta_rel_martcarr_horario_maestro f = new frmAlta_rel_martcarr_horario_maestro();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            frmConsulta_relmatcarr_horario_maestro f = new frmConsulta_relmatcarr_horario_maestro();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            ReactivarRel_Matcarr_horario_maestro f = new ReactivarRel_Matcarr_horario_maestro();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            frmModificacion_rel_matcarr_horario_maestro f = new frmModificacion_rel_matcarr_horario_maestro();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            frmAltaGrupos f = new frmAltaGrupos();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            frmConsultaGrupos f = new frmConsultaGrupos();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            frmModificaGrupos f = new frmModificaGrupos();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            ReactivarGrupos f = new ReactivarGrupos();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            frmAltaCampus f = new frmAltaCampus();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            frmConsultaCampus f = new frmConsultaCampus();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            frmModificaCampus f = new frmModificaCampus();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            ReactivarCampus f = new ReactivarCampus();
             f.Show();
             this.Hide();
         }

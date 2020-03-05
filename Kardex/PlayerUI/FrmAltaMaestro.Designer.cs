@@ -45,14 +45,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.gbAltaMaestro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAltaMaestro
             // 
             this.gbAltaMaestro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaMaestro.Controls.Add(this.dtca2);
             this.gbAltaMaestro.Controls.Add(this.dtca);
             this.gbAltaMaestro.Controls.Add(this.txtPass);
             this.gbAltaMaestro.Controls.Add(this.label5);
@@ -229,6 +232,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(264, 262);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(172, 99);
+            this.dtca2.TabIndex = 37;
+            this.dtca2.Visible = false;
+            // 
             // FrmAltaMaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +255,7 @@
             this.gbAltaMaestro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,5 +278,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechaAlta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtca;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

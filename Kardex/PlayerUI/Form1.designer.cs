@@ -30,72 +30,98 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.button39 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button63 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.button58 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button59 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
             this.panelCarreraAlumnoMaestro = new System.Windows.Forms.Panel();
             this.button34 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
             this.panelCarreraMateria = new System.Windows.Forms.Panel();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
             this.panelCaliSubMenu = new System.Windows.Forms.Panel();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
             this.panelPeriodoSubMenu = new System.Windows.Forms.Panel();
             this.btnreactivarperiodo = new System.Windows.Forms.Button();
             this.btnmodificacionperiodo = new System.Windows.Forms.Button();
             this.btnconsultaperiodo = new System.Windows.Forms.Button();
             this.btnaltaperiodo = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.panelMaestroSubMenu = new System.Windows.Forms.Panel();
             this.btnreactivacionmaestro = new System.Windows.Forms.Button();
             this.btnmodifimaestro = new System.Windows.Forms.Button();
             this.btnconsultamaestro = new System.Windows.Forms.Button();
             this.btnaltamaestro = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
             this.panelToolsSubMenu = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.btnTools = new System.Windows.Forms.Button();
             this.panelPlaylistSubMenu = new System.Windows.Forms.Panel();
             this.button26 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.btnPlaylist = new System.Windows.Forms.Button();
             this.panelMediaSubMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnTools = new System.Windows.Forms.Button();
+            this.btnPlaylist = new System.Windows.Forms.Button();
+            this.btnMedia = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelCarreraAlumnoMaestro.SuspendLayout();
             this.panelCarreraMateria.SuspendLayout();
             this.panelCaliSubMenu.SuspendLayout();
@@ -105,18 +131,26 @@
             this.panelPlaylistSubMenu.SuspendLayout();
             this.panelMediaSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelPlayer.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelSideMenu.Controls.Add(this.button39);
-            this.panelSideMenu.Controls.Add(this.button38);
+            this.panelSideMenu.Controls.Add(this.panel5);
+            this.panelSideMenu.Controls.Add(this.button55);
+            this.panelSideMenu.Controls.Add(this.panel4);
+            this.panelSideMenu.Controls.Add(this.button51);
+            this.panelSideMenu.Controls.Add(this.panel3);
+            this.panelSideMenu.Controls.Add(this.button47);
+            this.panelSideMenu.Controls.Add(this.panel2);
+            this.panelSideMenu.Controls.Add(this.button43);
+            this.panelSideMenu.Controls.Add(this.panel1);
+            this.panelSideMenu.Controls.Add(this.button41);
             this.panelSideMenu.Controls.Add(this.panelCarreraAlumnoMaestro);
             this.panelSideMenu.Controls.Add(this.button33);
             this.panelSideMenu.Controls.Add(this.panelCarreraMateria);
@@ -141,53 +175,477 @@
             this.panelSideMenu.Size = new System.Drawing.Size(250, 577);
             this.panelSideMenu.TabIndex = 0;
             // 
-            // button39
+            // panel5
             // 
-            this.button39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button39.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button39.FlatAppearance.BorderSize = 0;
-            this.button39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.ForeColor = System.Drawing.Color.Silver;
-            this.button39.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
-            this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.Location = new System.Drawing.Point(0, 2077);
-            this.button39.Name = "button39";
-            this.button39.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button39.Size = new System.Drawing.Size(233, 45);
-            this.button39.TabIndex = 20;
-            this.button39.Text = "  cesun";
-            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button39.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel5.Controls.Add(this.button63);
+            this.panel5.Controls.Add(this.button56);
+            this.panel5.Controls.Add(this.button57);
+            this.panel5.Controls.Add(this.button58);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 3304);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(233, 240);
+            this.panel5.TabIndex = 30;
+            this.panel5.Click += new System.EventHandler(this.Horario);
+            // 
+            // button63
+            // 
+            this.button63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button63.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button63.FlatAppearance.BorderSize = 0;
+            this.button63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button63.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button63.ForeColor = System.Drawing.Color.Silver;
+            this.button63.Location = new System.Drawing.Point(0, 176);
+            this.button63.Name = "button63";
+            this.button63.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button63.Size = new System.Drawing.Size(233, 51);
+            this.button63.TabIndex = 4;
+            this.button63.Text = "Reactivar";
+            this.button63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button63.UseVisualStyleBackColor = false;
+            this.button63.Click += new System.EventHandler(this.button63_Click);
+            // 
+            // button56
+            // 
+            this.button56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button56.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button56.FlatAppearance.BorderSize = 0;
+            this.button56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button56.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button56.ForeColor = System.Drawing.Color.Silver;
+            this.button56.Location = new System.Drawing.Point(0, 114);
+            this.button56.Name = "button56";
+            this.button56.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button56.Size = new System.Drawing.Size(233, 62);
+            this.button56.TabIndex = 2;
+            this.button56.Text = "Modificacion Horario";
+            this.button56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button56.UseVisualStyleBackColor = false;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
+            // 
+            // button57
+            // 
+            this.button57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button57.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button57.FlatAppearance.BorderSize = 0;
+            this.button57.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button57.ForeColor = System.Drawing.Color.Silver;
+            this.button57.Location = new System.Drawing.Point(0, 74);
+            this.button57.Name = "button57";
+            this.button57.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button57.Size = new System.Drawing.Size(233, 40);
+            this.button57.TabIndex = 1;
+            this.button57.Text = "Consulta Horario";
+            this.button57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button57.UseVisualStyleBackColor = false;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
+            // 
+            // button58
+            // 
+            this.button58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button58.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button58.FlatAppearance.BorderSize = 0;
+            this.button58.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button58.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button58.ForeColor = System.Drawing.Color.Silver;
+            this.button58.Location = new System.Drawing.Point(0, 0);
+            this.button58.Name = "button58";
+            this.button58.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button58.Size = new System.Drawing.Size(233, 74);
+            this.button58.TabIndex = 0;
+            this.button58.Text = "Alta Horario";
+            this.button58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button58.UseVisualStyleBackColor = false;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel4.Controls.Add(this.button62);
+            this.panel4.Controls.Add(this.button52);
+            this.panel4.Controls.Add(this.button53);
+            this.panel4.Controls.Add(this.button54);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 2997);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(233, 244);
+            this.panel4.TabIndex = 28;
+            this.panel4.Click += new System.EventHandler(this.Maestro);
+            // 
+            // button62
+            // 
+            this.button62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button62.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button62.FlatAppearance.BorderSize = 0;
+            this.button62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button62.ForeColor = System.Drawing.Color.Silver;
+            this.button62.Location = new System.Drawing.Point(0, 176);
+            this.button62.Name = "button62";
+            this.button62.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button62.Size = new System.Drawing.Size(233, 51);
+            this.button62.TabIndex = 4;
+            this.button62.Text = "Reactivar";
+            this.button62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button62.UseVisualStyleBackColor = false;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
+            // 
+            // button52
+            // 
+            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button52.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button52.FlatAppearance.BorderSize = 0;
+            this.button52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button52.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button52.ForeColor = System.Drawing.Color.Silver;
+            this.button52.Location = new System.Drawing.Point(0, 114);
+            this.button52.Name = "button52";
+            this.button52.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button52.Size = new System.Drawing.Size(233, 62);
+            this.button52.TabIndex = 2;
+            this.button52.Text = "Modificacion Maestro";
+            this.button52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button52.UseVisualStyleBackColor = false;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button53.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button53.FlatAppearance.BorderSize = 0;
+            this.button53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button53.ForeColor = System.Drawing.Color.Silver;
+            this.button53.Location = new System.Drawing.Point(0, 74);
+            this.button53.Name = "button53";
+            this.button53.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button53.Size = new System.Drawing.Size(233, 40);
+            this.button53.TabIndex = 1;
+            this.button53.Text = "Consulta Maestro";
+            this.button53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button53.UseVisualStyleBackColor = false;
+            this.button53.Click += new System.EventHandler(this.button53_Click);
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button54.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button54.FlatAppearance.BorderSize = 0;
+            this.button54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button54.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button54.ForeColor = System.Drawing.Color.Silver;
+            this.button54.Location = new System.Drawing.Point(0, 0);
+            this.button54.Name = "button54";
+            this.button54.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button54.Size = new System.Drawing.Size(233, 74);
+            this.button54.TabIndex = 0;
+            this.button54.Text = "Alta Maestro";
+            this.button54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button54.UseVisualStyleBackColor = false;
+            this.button54.Click += new System.EventHandler(this.button54_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel3.Controls.Add(this.button61);
+            this.panel3.Controls.Add(this.button48);
+            this.panel3.Controls.Add(this.button49);
+            this.panel3.Controls.Add(this.button50);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 2698);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(233, 236);
+            this.panel3.TabIndex = 26;
+            // 
+            // button61
+            // 
+            this.button61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button61.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button61.FlatAppearance.BorderSize = 0;
+            this.button61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button61.ForeColor = System.Drawing.Color.Silver;
+            this.button61.Location = new System.Drawing.Point(0, 176);
+            this.button61.Name = "button61";
+            this.button61.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button61.Size = new System.Drawing.Size(233, 51);
+            this.button61.TabIndex = 4;
+            this.button61.Text = "Reactivar";
+            this.button61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button61.UseVisualStyleBackColor = false;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // button48
+            // 
+            this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button48.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button48.FlatAppearance.BorderSize = 0;
+            this.button48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.ForeColor = System.Drawing.Color.Silver;
+            this.button48.Location = new System.Drawing.Point(0, 114);
+            this.button48.Name = "button48";
+            this.button48.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button48.Size = new System.Drawing.Size(233, 62);
+            this.button48.TabIndex = 2;
+            this.button48.Text = "Modificacion ";
+            this.button48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button48.UseVisualStyleBackColor = false;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button49.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button49.FlatAppearance.BorderSize = 0;
+            this.button49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button49.ForeColor = System.Drawing.Color.Silver;
+            this.button49.Location = new System.Drawing.Point(0, 74);
+            this.button49.Name = "button49";
+            this.button49.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button49.Size = new System.Drawing.Size(233, 40);
+            this.button49.TabIndex = 1;
+            this.button49.Text = "Consulta";
+            this.button49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button49.UseVisualStyleBackColor = false;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
+            // 
+            // button50
+            // 
+            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button50.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button50.FlatAppearance.BorderSize = 0;
+            this.button50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button50.ForeColor = System.Drawing.Color.Silver;
+            this.button50.Location = new System.Drawing.Point(0, 0);
+            this.button50.Name = "button50";
+            this.button50.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button50.Size = new System.Drawing.Size(233, 74);
+            this.button50.TabIndex = 0;
+            this.button50.Text = "Alta ";
+            this.button50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button50.UseVisualStyleBackColor = false;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel2.Controls.Add(this.button60);
+            this.panel2.Controls.Add(this.button44);
+            this.panel2.Controls.Add(this.button45);
+            this.panel2.Controls.Add(this.button46);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 2395);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(233, 240);
+            this.panel2.TabIndex = 24;
+            // 
+            // button60
+            // 
+            this.button60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button60.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button60.FlatAppearance.BorderSize = 0;
+            this.button60.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button60.ForeColor = System.Drawing.Color.Silver;
+            this.button60.Location = new System.Drawing.Point(0, 176);
+            this.button60.Name = "button60";
+            this.button60.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button60.Size = new System.Drawing.Size(233, 51);
+            this.button60.TabIndex = 4;
+            this.button60.Text = "Reactivar";
+            this.button60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button60.UseVisualStyleBackColor = false;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
+            // 
+            // button44
+            // 
+            this.button44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button44.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button44.FlatAppearance.BorderSize = 0;
+            this.button44.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.ForeColor = System.Drawing.Color.Silver;
+            this.button44.Location = new System.Drawing.Point(0, 114);
+            this.button44.Name = "button44";
+            this.button44.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button44.Size = new System.Drawing.Size(233, 62);
+            this.button44.TabIndex = 2;
+            this.button44.Text = "Modificacion Grupo";
+            this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button44.UseVisualStyleBackColor = false;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button45
+            // 
+            this.button45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button45.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button45.FlatAppearance.BorderSize = 0;
+            this.button45.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.ForeColor = System.Drawing.Color.Silver;
+            this.button45.Location = new System.Drawing.Point(0, 74);
+            this.button45.Name = "button45";
+            this.button45.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button45.Size = new System.Drawing.Size(233, 40);
+            this.button45.TabIndex = 1;
+            this.button45.Text = "Consulta Grupo";
+            this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button45.UseVisualStyleBackColor = false;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // button46
+            // 
+            this.button46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button46.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button46.FlatAppearance.BorderSize = 0;
+            this.button46.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.ForeColor = System.Drawing.Color.Silver;
+            this.button46.Location = new System.Drawing.Point(0, 0);
+            this.button46.Name = "button46";
+            this.button46.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button46.Size = new System.Drawing.Size(233, 74);
+            this.button46.TabIndex = 0;
+            this.button46.Text = "Alta Grupo";
+            this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button46.UseVisualStyleBackColor = false;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.button59);
+            this.panel1.Controls.Add(this.button38);
+            this.panel1.Controls.Add(this.button39);
+            this.panel1.Controls.Add(this.button42);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 2095);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(233, 237);
+            this.panel1.TabIndex = 22;
+            // 
+            // button59
+            // 
+            this.button59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button59.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button59.FlatAppearance.BorderSize = 0;
+            this.button59.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button59.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button59.ForeColor = System.Drawing.Color.Silver;
+            this.button59.Location = new System.Drawing.Point(0, 176);
+            this.button59.Name = "button59";
+            this.button59.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button59.Size = new System.Drawing.Size(233, 51);
+            this.button59.TabIndex = 4;
+            this.button59.Text = "Reactivar";
+            this.button59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button59.UseVisualStyleBackColor = false;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
             // 
             // button38
             // 
             this.button38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
             this.button38.Dock = System.Windows.Forms.DockStyle.Top;
             this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.ForeColor = System.Drawing.Color.Silver;
-            this.button38.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
-            this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.Location = new System.Drawing.Point(0, 2032);
+            this.button38.Location = new System.Drawing.Point(0, 114);
             this.button38.Name = "button38";
-            this.button38.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button38.Size = new System.Drawing.Size(233, 45);
-            this.button38.TabIndex = 19;
-            this.button38.Text = "  agregar";
+            this.button38.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button38.Size = new System.Drawing.Size(233, 62);
+            this.button38.TabIndex = 2;
+            this.button38.Text = "Modificacion Campus";
             this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button38.UseVisualStyleBackColor = false;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button39
+            // 
+            this.button39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button39.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button39.FlatAppearance.BorderSize = 0;
+            this.button39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.ForeColor = System.Drawing.Color.Silver;
+            this.button39.Location = new System.Drawing.Point(0, 74);
+            this.button39.Name = "button39";
+            this.button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button39.Size = new System.Drawing.Size(233, 40);
+            this.button39.TabIndex = 1;
+            this.button39.Text = "Consulta Campus";
+            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button39.UseVisualStyleBackColor = false;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // button42
+            // 
+            this.button42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button42.FlatAppearance.BorderSize = 0;
+            this.button42.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.ForeColor = System.Drawing.Color.Silver;
+            this.button42.Location = new System.Drawing.Point(0, 0);
+            this.button42.Name = "button42";
+            this.button42.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button42.Size = new System.Drawing.Size(233, 74);
+            this.button42.TabIndex = 0;
+            this.button42.Text = "Alta Campus";
+            this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button42.UseVisualStyleBackColor = false;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // panelCarreraAlumnoMaestro
             // 
             this.panelCarreraAlumnoMaestro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panelCarreraAlumnoMaestro.Controls.Add(this.button40);
             this.panelCarreraAlumnoMaestro.Controls.Add(this.button34);
             this.panelCarreraAlumnoMaestro.Controls.Add(this.button35);
             this.panelCarreraAlumnoMaestro.Controls.Add(this.button36);
@@ -277,29 +735,6 @@
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button37.UseVisualStyleBackColor = false;
             this.button37.Click += new System.EventHandler(this.button37_Click);
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button33.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button33.FlatAppearance.BorderSize = 0;
-            this.button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.Silver;
-            this.button33.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
-            this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.Location = new System.Drawing.Point(0, 1675);
-            this.button33.Name = "button33";
-            this.button33.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button33.Size = new System.Drawing.Size(233, 63);
-            this.button33.TabIndex = 17;
-            this.button33.Text = "  Carrera-Alumno-Maestro";
-            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button33.UseVisualStyleBackColor = false;
-            this.button33.Click += new System.EventHandler(this.button33_Click_2);
             // 
             // panelCarreraMateria
             // 
@@ -394,29 +829,6 @@
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.Silver;
-            this.button28.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_fullscreen_expand_arrow_full_screen_5172978;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(0, 1394);
-            this.button28.Name = "button28";
-            this.button28.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button28.Size = new System.Drawing.Size(233, 45);
-            this.button28.TabIndex = 15;
-            this.button28.Text = "  Carrera-Materia";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button28.UseVisualStyleBackColor = false;
-            this.button28.Click += new System.EventHandler(this.Button28_Click);
-            // 
             // panelCaliSubMenu
             // 
             this.panelCaliSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
@@ -488,29 +900,6 @@
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.UseVisualStyleBackColor = false;
             this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.Silver;
-            this.button21.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_bomb_virus_danger_alert_explosive_5172946;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 1145);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(233, 45);
-            this.button21.TabIndex = 13;
-            this.button21.Text = "  Calificacion";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.Button21_Click);
             // 
             // panelPeriodoSubMenu
             // 
@@ -607,29 +996,6 @@
             this.btnaltaperiodo.UseVisualStyleBackColor = false;
             this.btnaltaperiodo.Click += new System.EventHandler(this.btnaltaperiodo_Click);
             // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.Silver;
-            this.button16.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Browser_webpage_website_web_page_5172949;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(0, 935);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(233, 45);
-            this.button16.TabIndex = 11;
-            this.button16.Text = "  Periodo";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.Button16_Click);
-            // 
             // panelMaestroSubMenu
             // 
             this.panelMaestroSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
@@ -722,52 +1088,6 @@
             this.btnaltamaestro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnaltamaestro.UseVisualStyleBackColor = false;
             this.btnaltamaestro.Click += new System.EventHandler(this.btnaltamaestro_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Silver;
-            this.btnExit.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_entrance_login_log_in_arrow_5172973;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 2122);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(233, 45);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "  Exit";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.ForeColor = System.Drawing.Color.Silver;
-            this.btnHelp.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_information_social_media_web_network_5172987;
-            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 725);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(233, 45);
-            this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "  Maestros";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHelp.UseVisualStyleBackColor = false;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // panelToolsSubMenu
             // 
@@ -862,29 +1182,6 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // btnTools
-            // 
-            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.btnTools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTools.FlatAppearance.BorderSize = 0;
-            this.btnTools.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnTools.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTools.ForeColor = System.Drawing.Color.Silver;
-            this.btnTools.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Finger_print_identity_crime_fingerprint_5172975;
-            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 526);
-            this.btnTools.Name = "btnTools";
-            this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnTools.Size = new System.Drawing.Size(233, 45);
-            this.btnTools.TabIndex = 6;
-            this.btnTools.Text = "  Alumnos";
-            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTools.UseVisualStyleBackColor = false;
-            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
-            // 
             // panelPlaylistSubMenu
             // 
             this.panelPlaylistSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
@@ -977,29 +1274,6 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // btnPlaylist
-            // 
-            this.btnPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.btnPlaylist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPlaylist.FlatAppearance.BorderSize = 0;
-            this.btnPlaylist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnPlaylist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaylist.ForeColor = System.Drawing.Color.Silver;
-            this.btnPlaylist.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Share_social_media_web_network_5173019;
-            this.btnPlaylist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylist.Location = new System.Drawing.Point(0, 305);
-            this.btnPlaylist.Name = "btnPlaylist";
-            this.btnPlaylist.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPlaylist.Size = new System.Drawing.Size(233, 48);
-            this.btnPlaylist.TabIndex = 3;
-            this.btnPlaylist.Text = "  Materia";
-            this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlaylist.UseVisualStyleBackColor = false;
-            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
             // 
             // panelMediaSubMenu
             // 
@@ -1114,29 +1388,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnMedia
-            // 
-            this.btnMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.btnMedia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMedia.FlatAppearance.BorderSize = 0;
-            this.btnMedia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnMedia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnMedia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedia.ForeColor = System.Drawing.Color.Silver;
-            this.btnMedia.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_business_focus_eye_view_vision_5172950;
-            this.btnMedia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.Location = new System.Drawing.Point(0, 92);
-            this.btnMedia.Name = "btnMedia";
-            this.btnMedia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMedia.Size = new System.Drawing.Size(233, 45);
-            this.btnMedia.TabIndex = 1;
-            this.btnMedia.Text = "  Carrera";
-            this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMedia.UseVisualStyleBackColor = false;
-            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
-            // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
@@ -1146,17 +1397,6 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(233, 92);
             this.panelLogo.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(196, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
             // 
             // panelPlayer
             // 
@@ -1183,14 +1423,6 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.panelChildForm.Controls.Add(this.button22);
-            this.panelChildForm.Controls.Add(this.button20);
-            this.panelChildForm.Controls.Add(this.button19);
-            this.panelChildForm.Controls.Add(this.button18);
-            this.panelChildForm.Controls.Add(this.button17);
-            this.panelChildForm.Controls.Add(this.button15);
-            this.panelChildForm.Controls.Add(this.button14);
-            this.panelChildForm.Controls.Add(this.button11);
             this.panelChildForm.Controls.Add(this.pictureBox9);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
@@ -1198,96 +1430,371 @@
             this.panelChildForm.Size = new System.Drawing.Size(939, 447);
             this.panelChildForm.TabIndex = 2;
             // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(809, 217);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
-            this.button20.TabIndex = 9;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(852, 109);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 8;
-            this.button19.Text = "Reactiv  ";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(819, 70);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(120, 33);
-            this.button18.TabIndex = 7;
-            this.button18.Text = "ModiRELMATCAR";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click_1);
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(809, 166);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
-            this.button17.TabIndex = 6;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(809, 137);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 5;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(852, 41);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 4;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(852, 12);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox9.Image = global::PlayerUI.Properties.Resources.maxresdefault;
-            this.pictureBox9.Location = new System.Drawing.Point(-169, -119);
+            this.pictureBox9.Location = new System.Drawing.Point(-188, -94);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(1280, 720);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
             // 
-            // button22
+            // button55
             // 
-            this.button22.Location = new System.Drawing.Point(809, 246);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(118, 44);
-            this.button22.TabIndex = 10;
-            this.button22.Text = "Reactiv  ";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button55.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button55.FlatAppearance.BorderSize = 0;
+            this.button55.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button55.ForeColor = System.Drawing.Color.Silver;
+            this.button55.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button55.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button55.Location = new System.Drawing.Point(0, 3241);
+            this.button55.Name = "button55";
+            this.button55.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button55.Size = new System.Drawing.Size(233, 63);
+            this.button55.TabIndex = 29;
+            this.button55.Text = "Materia-carrera-Horario";
+            this.button55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button55.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button55.UseVisualStyleBackColor = false;
+            this.button55.Click += new System.EventHandler(this.horarioo);
+            // 
+            // button51
+            // 
+            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button51.FlatAppearance.BorderSize = 0;
+            this.button51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button51.ForeColor = System.Drawing.Color.Silver;
+            this.button51.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button51.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button51.Location = new System.Drawing.Point(0, 2934);
+            this.button51.Name = "button51";
+            this.button51.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button51.Size = new System.Drawing.Size(233, 63);
+            this.button51.TabIndex = 27;
+            this.button51.Text = "Materia-carrera-horario-Maestro";
+            this.button51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button51.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button51.UseVisualStyleBackColor = false;
+            this.button51.Click += new System.EventHandler(this.maestroo);
+            // 
+            // button47
+            // 
+            this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button47.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button47.FlatAppearance.BorderSize = 0;
+            this.button47.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.ForeColor = System.Drawing.Color.Silver;
+            this.button47.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button47.Location = new System.Drawing.Point(0, 2635);
+            this.button47.Name = "button47";
+            this.button47.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button47.Size = new System.Drawing.Size(233, 63);
+            this.button47.TabIndex = 25;
+            this.button47.Text = "Materia-carrera-horario-Alumno";
+            this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button47.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button47.UseVisualStyleBackColor = false;
+            this.button47.Click += new System.EventHandler(this.alumnoo);
+            // 
+            // button43
+            // 
+            this.button43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button43.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button43.FlatAppearance.BorderSize = 0;
+            this.button43.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.ForeColor = System.Drawing.Color.Silver;
+            this.button43.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button43.Location = new System.Drawing.Point(0, 2332);
+            this.button43.Name = "button43";
+            this.button43.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button43.Size = new System.Drawing.Size(233, 63);
+            this.button43.TabIndex = 23;
+            this.button43.Text = "Modulo Grupo";
+            this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button43.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button43.UseVisualStyleBackColor = false;
+            this.button43.Click += new System.EventHandler(this.ModuloGrupo);
+            // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button41.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button41.FlatAppearance.BorderSize = 0;
+            this.button41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.Silver;
+            this.button41.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button41.Location = new System.Drawing.Point(0, 2032);
+            this.button41.Name = "button41";
+            this.button41.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button41.Size = new System.Drawing.Size(233, 63);
+            this.button41.TabIndex = 21;
+            this.button41.Text = "Modulo Campus";
+            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.ModuloCampus);
+            // 
+            // button40
+            // 
+            this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button40.FlatAppearance.BorderSize = 0;
+            this.button40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.ForeColor = System.Drawing.Color.Silver;
+            this.button40.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button40.Location = new System.Drawing.Point(0, 264);
+            this.button40.Name = "button40";
+            this.button40.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button40.Size = new System.Drawing.Size(233, 63);
+            this.button40.TabIndex = 18;
+            this.button40.Text = "  Carrera-Alumno-Maestro";
+            this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button40.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button40.UseVisualStyleBackColor = false;
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button33.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button33.FlatAppearance.BorderSize = 0;
+            this.button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.Silver;
+            this.button33.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_data_information_spy_web_computer_5172966;
+            this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button33.Location = new System.Drawing.Point(0, 1675);
+            this.button33.Name = "button33";
+            this.button33.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button33.Size = new System.Drawing.Size(233, 63);
+            this.button33.TabIndex = 17;
+            this.button33.Text = "  Carrera-Alumno-Maestro";
+            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button33.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button33.UseVisualStyleBackColor = false;
+            this.button33.Click += new System.EventHandler(this.button33_Click_2);
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.Silver;
+            this.button28.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_fullscreen_expand_arrow_full_screen_5172978;
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(0, 1394);
+            this.button28.Name = "button28";
+            this.button28.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button28.Size = new System.Drawing.Size(233, 45);
+            this.button28.TabIndex = 15;
+            this.button28.Text = "  Carrera-Materia";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.Button28_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.Silver;
+            this.button21.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_bomb_virus_danger_alert_explosive_5172946;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(0, 1145);
+            this.button21.Name = "button21";
+            this.button21.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button21.Size = new System.Drawing.Size(233, 45);
+            this.button21.TabIndex = 13;
+            this.button21.Text = "  Calificacion";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.Button21_Click);
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.Silver;
+            this.button16.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Browser_webpage_website_web_page_5172949;
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(0, 935);
+            this.button16.Name = "button16";
+            this.button16.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button16.Size = new System.Drawing.Size(233, 45);
+            this.button16.TabIndex = 11;
+            this.button16.Text = "  Periodo";
+            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.Button16_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Silver;
+            this.btnExit.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_entrance_login_log_in_arrow_5172973;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 3544);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "  Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.Silver;
+            this.btnHelp.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_information_social_media_web_network_5172987;
+            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.Location = new System.Drawing.Point(0, 725);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnHelp.Size = new System.Drawing.Size(233, 45);
+            this.btnHelp.TabIndex = 8;
+            this.btnHelp.Text = "  Maestros";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnTools
+            // 
+            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.btnTools.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTools.FlatAppearance.BorderSize = 0;
+            this.btnTools.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnTools.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTools.ForeColor = System.Drawing.Color.Silver;
+            this.btnTools.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Finger_print_identity_crime_fingerprint_5172975;
+            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.Location = new System.Drawing.Point(0, 526);
+            this.btnTools.Name = "btnTools";
+            this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnTools.Size = new System.Drawing.Size(233, 45);
+            this.btnTools.TabIndex = 6;
+            this.btnTools.Text = "  Alumnos";
+            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTools.UseVisualStyleBackColor = false;
+            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
+            // 
+            // btnPlaylist
+            // 
+            this.btnPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.btnPlaylist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlaylist.FlatAppearance.BorderSize = 0;
+            this.btnPlaylist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnPlaylist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaylist.ForeColor = System.Drawing.Color.Silver;
+            this.btnPlaylist.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_Share_social_media_web_network_5173019;
+            this.btnPlaylist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaylist.Location = new System.Drawing.Point(0, 305);
+            this.btnPlaylist.Name = "btnPlaylist";
+            this.btnPlaylist.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnPlaylist.Size = new System.Drawing.Size(233, 48);
+            this.btnPlaylist.TabIndex = 3;
+            this.btnPlaylist.Text = "  Materia";
+            this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaylist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlaylist.UseVisualStyleBackColor = false;
+            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
+            // 
+            // btnMedia
+            // 
+            this.btnMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.btnMedia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMedia.FlatAppearance.BorderSize = 0;
+            this.btnMedia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnMedia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnMedia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedia.ForeColor = System.Drawing.Color.Silver;
+            this.btnMedia.Image = global::PlayerUI.Properties.Resources.iconfinder_Internet_Security_business_focus_eye_view_vision_5172950;
+            this.btnMedia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedia.Location = new System.Drawing.Point(0, 92);
+            this.btnMedia.Name = "btnMedia";
+            this.btnMedia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnMedia.Size = new System.Drawing.Size(233, 45);
+            this.btnMedia.TabIndex = 1;
+            this.btnMedia.Text = "  Carrera";
+            this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMedia.UseVisualStyleBackColor = false;
+            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(196, 62);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // Form1
             // 
@@ -1306,6 +1813,11 @@
             this.Text = "Kardex Cesun Universidad";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panelCarreraAlumnoMaestro.ResumeLayout(false);
             this.panelCarreraMateria.ResumeLayout(false);
             this.panelCaliSubMenu.ResumeLayout(false);
@@ -1315,12 +1827,12 @@
             this.panelPlaylistSubMenu.ResumeLayout(false);
             this.panelMediaSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelPlayer.ResumeLayout(false);
             this.panelPlayer.PerformLayout();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1377,22 +1889,43 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button56;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button59;
     }
 }
 

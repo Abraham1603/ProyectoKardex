@@ -34,6 +34,7 @@ namespace PlayerUI
                 }
                 else
                 {
+
                     MessageBox.Show("No hay Periodos activas", "Aviso", MessageBoxButtons.OK);
                 }
             }
@@ -113,7 +114,7 @@ namespace PlayerUI
             string eliminar = dtaPeriodo.CurrentRow.Cells[0].Value.ToString();
 
 
-            if (MessageBox.Show("Seguro que quieres dar de baja este periodo?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Se daran de baja el periodo junto con todas las dependencias", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 bl.BajaPeriodo(eliminar);
 
@@ -125,6 +126,10 @@ namespace PlayerUI
                 }
                 else
                 {
+                    dtaPeriodo.DataSource = dt;
+
+
+
                     MessageBox.Show("No hay periodos activos", "Aviso", MessageBoxButtons.OK);
                 }
 

@@ -31,6 +31,110 @@ namespace Kardex.Layers
         }
 
 
+        public void ActualizaCampus(string carrera, string carreranueva, string carreranueva2, string fecha)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (carrera == "")
+            {
+                MessageBox.Show("Favor de especificar el campus a modificar", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+
+                dal.ActualizaCampus(carrera, carreranueva, carreranueva2, fecha);//, fechaalta, fechabaja, estatus);
+                MessageBox.Show("El campus se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+
+            }
+        }
+
+        public DataTable ConsultaCampus(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaCampus(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el Campus.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+        public DataTable validagrupoinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaGrupoinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el grupo.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+        public void ReactivarGrupo(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.ReactivarGrupo(carrera);
+                MessageBox.Show("El Grupo Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona un Grupo.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+
+
+        public DataTable ConsultaGruposinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaGrupoinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+        public void ActualizaGrupo(string carrera, string carreranueva, string fecha)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (carrera == "")
+            {
+                MessageBox.Show("Favor de especificar el grupo a modificar", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+
+                dal.ActualizaGrupo(carrera, carreranueva, fecha);//, fechaalta, fechabaja, estatus);
+                MessageBox.Show("El grupo se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+
+            }
+        }
+
         public void BajaRelmatcarr_horario_alumno(string carrera)
         {
 
@@ -40,6 +144,20 @@ namespace Kardex.Layers
 
 
         }
+
+
+
+
+        public void BajaRelmatcarr_horario_maestro(string carrera)
+        {
+
+
+            dal.BajaRelmatcarr_horario_maestro(carrera);
+            MessageBox.Show("La relacion Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
+
 
         public void AltaGrupo(string carrera, string fecha)
         {
@@ -80,13 +198,45 @@ namespace Kardex.Layers
             }
         }
 
+        public DataTable ConsultaCampusinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaCampusinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el Campus.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+        public void ReactivarCampus(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.ReactivarCampus(carrera);
+                MessageBox.Show("El Campus Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona un Campus.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
 
         public void BajaCampus(string carrera)
         {
             if (carrera != "")
             {
 
-               // dal.BajaCampus(carrera);
+                dal.BajaCampus(carrera);
                 MessageBox.Show("El Campus Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -124,6 +274,23 @@ namespace Kardex.Layers
             {
 
                 return dal.ConsultaCampus(materia);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el Campus.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+        public DataTable validacampusinactivo(string materia)
+        {
+
+            if (materia != "")
+            {
+
+                return dal.ConsultaCampusinactivo(materia);
             }
             else
             {
@@ -179,6 +346,15 @@ namespace Kardex.Layers
 
         }
 
+        
+
+        public DataTable validarelacionhorarioalumnoinactivo(string carrera, string carrera2)
+        {
+
+            return dal.ConsultaRelmatcarr_horario_alumnoinactivo2(carrera,carrera2);
+
+        }
+
 
         public DataTable ConsultaRelmatcarr_horario_alumnoinactivo()
         {
@@ -188,11 +364,59 @@ namespace Kardex.Layers
         }
 
 
+        public DataTable ConsultaRelmatcarr_horario_Maestroinactivo()
+        {
+
+            return dal.ConsultaRelmatcarr_horario_Maestroinactivo();
+
+        }
+
+        
+
+        
+
+
+        public DataTable validahorarioalumno(string carrera, string carrera2)
+        {
+
+            return dal.ConsultaRelmatcarr_horario_alumno2(carrera,carrera2);
+
+        }
+
+
 
         public DataTable ConsultaRelmatcarr_horario_alumno()
         {
 
             return dal.ConsultaRelmatcarr_horario_alumno();
+
+        }
+
+
+
+
+
+        /**/
+        public DataTable validarelacionhorariomaestroinactivo(string carrera, string carrera2)
+        {
+
+            return dal.ConsultaRelmatcarr_horario_Maestroinactivo2(carrera, carrera2);
+
+        }
+
+        public DataTable Valida_maestro_nombre(string maestro)
+        {
+
+            return dal.Valida_maestro_nombre(maestro);
+
+        }
+        /**/
+
+
+        public DataTable ConsultaRelmatcarr_horario_Maestro()
+        {
+
+            return dal.ConsultaRelmatcarr_horario_Maestro();
 
         }
 
@@ -228,6 +452,169 @@ namespace Kardex.Layers
 
 
         }
+
+        public DataTable validacarrerainactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaCarrerainactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+        public DataTable validamateriainactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaMateriainactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+        public void BajaGrupo(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.BajaGrupo(carrera);
+                MessageBox.Show("El grupo Se Dio De Baja Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona un grupo.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+        public DataTable ConsultaGrupo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaGrupo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para el grupo.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+        public DataTable validaperiodoinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaPeriodoinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+        public DataTable validaalumnoinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaAlumnoinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+        public DataTable traer_grupos(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.traer_grupos(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+        public DataTable validaalumnoinactivo2(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.ConsultaAlumnoinactivo2(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+
+        public DataTable validamaestroinactivo(string carrera)
+        {
+
+            if (carrera != "")
+            {
+
+                return dal.validamaestroinactivo(carrera);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la carrera.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
 
         public DataTable No_puede_tener_dos_materias_en_el_mismo_horario (string matcarr, string periodo, string grupo)
         {
@@ -336,6 +723,24 @@ namespace Kardex.Layers
             }
         }
 
+        public void ReactivarRelmatcarr_horario_maestro(string carrera)
+        {
+            if (carrera != "")
+            {
+
+                dal.ReactivarRelmatcarr_horario_maestro(carrera);
+                MessageBox.Show("La Relacion Se Reactivo Exitosamente", "SIN ERRORES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario selecciona una relacion.", "Alerta", MessageBoxButtons.OK);
+
+            }
+        }
+
+
+
 
         public void ReactivarRelmatcarr_horario_alumno(string carrera)
         {
@@ -370,6 +775,37 @@ namespace Kardex.Layers
 
             }
         }
+
+
+        public DataTable No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada_Docente(string matcarr, string maestro)
+        {
+
+            if (matcarr != "")
+            {
+
+                return dal.No_debe_permitir_asignar_una_materia_que_ya_esta_aprobada_Docente(matcarr, maestro);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar una relacion de horario", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+
+        public void Alta_rel_matcarr_horario_Maestro(string matcarr, string maestro)
+        {
+
+
+            dal.Alta_rel_matcarr_horario_Maestro(matcarr, maestro);
+            MessageBox.Show("se dio de alta la relacion", "Aviso", MessageBoxButtons.OK);
+
+
+        }
+
+
 
         public void ActualizaCarrera(string carrera, string carreranueva, string fechamodi)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
         {
@@ -450,6 +886,8 @@ namespace Kardex.Layers
 
 
         }
+
+
 
         public DataTable ConsultaMateriainactivo(string carrera)
         {
@@ -993,7 +1431,36 @@ namespace Kardex.Layers
             }
         }
 
-        /*public DataTable useradmin(string matricula, string pass)
+
+
+
+
+
+
+        public DataTable los_grupos_solo_pueden_pertenecer_a_una_carrera( string pass)
+        {
+            if (pass != "")
+            {
+
+                return dal.los_grupos_solo_pueden_pertenecer_a_una_carrera(pass);
+
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el usuario.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        public DataTable validaadmin(string matricula, string pass)
         {
             if (matricula != "")
             {
@@ -1003,10 +1470,10 @@ namespace Kardex.Layers
             }
             else
             {
-                MessageBox.Show("Es necesario especificar el valor de matricula.", "Alerta", MessageBoxButtons.OK);
+                MessageBox.Show("Es necesario especificar el usuario.", "Alerta", MessageBoxButtons.OK);
                 return null;
             }
-        }*/
+        }
 
         public void ActualizaCarrera(string carrera, string carreranueva)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
         {
@@ -1175,6 +1642,24 @@ namespace Kardex.Layers
 
 
 
+        public void Actualizarel_matcarr_horario_maestro(string id, string matcarr, string horario)//, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (matcarr == "")
+            {
+                MessageBox.Show("Favor de Ingresar un valor ", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+
+                dal.Actualizarel_matcarr_horario_maestro(id, matcarr, horario);//, fechaalta, fechabaja, estatus);
+                MessageBox.Show("Se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+
+            }
+        }
+
+
+
         public DataTable relrmcmateria(string materia)
         {
 
@@ -1307,7 +1792,26 @@ namespace Kardex.Layers
             return dal.ConsultaCalificacion();
 
         }
-       
+
+
+
+        public DataTable alumno_solo_puede_tener_un_grupo(string alumno)
+        {
+
+            return dal.alumno_solo_puede_tener_un_grupo(alumno);
+
+        }
+
+
+        public DataTable alumno_solo_puede_tener_un_grupo2(string cd)
+        {
+
+            return dal.alumno_solo_puede_tener_un_grupo2( cd);
+
+        }
+
+
+
         public void AltaCalificacion(string id)
         {
             if (id == "")
@@ -1368,5 +1872,34 @@ namespace Kardex.Layers
         {
             return dal.llenadohorario();
         }
+
+        public DataTable Valida_materia(string carrera, string periodo, string grupo)
+        {
+            return dal.Valida_materia(carrera, periodo, grupo);
+        }
+
+        public DataTable Valida_horario(string horario1, string horario2, string periodo, string grupo)
+        {
+            return dal.Valida_horario(horario1,horario2, periodo, grupo);
+        }
+
+
+
+        public DataTable Valida_maestro_matcarr(string maestro, string matcarr)
+        {
+            return dal.Valida_maestro_matcarr(maestro, matcarr);
+        }
+
+        public DataTable Valida_carrera(string matcar)
+        {
+            return dal.Valida_carrera(matcar);
+        }
+
+        public DataTable valida_horario_maestro_matcarr(string matcar,string maestro)
+        {
+            return dal.valida_horario_maestro_matcarr(matcar,maestro);
+        }
+
+
     }
 }

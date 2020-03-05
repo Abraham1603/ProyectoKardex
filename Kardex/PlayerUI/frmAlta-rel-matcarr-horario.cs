@@ -20,10 +20,7 @@ namespace PlayerUI
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void frmAlta_rel_matcarr_horario_Load(object sender, EventArgs e)
         {
@@ -119,37 +116,92 @@ namespace PlayerUI
             string grupo = cbgrupo.SelectedItem.ToString();
 
 
-            DataTable dt = bl.No_puede_tener_dos_materias_en_el_mismo_horario(matcarr, periodo, grupo);
-            if (dt.Rows.Count > 0)
+            DataTable dt8 = bl.Valida_carrera(matcarr);
+
+            if (dt8.Rows.Count > 0)
             {
-                dtvalidamateriahorario.DataSource = dt;
-                string a = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[1].Value.ToString());
-                string a2 = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[2].Value.ToString());
-                string b = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[3].Value.ToString());
-                string c = Convert.ToString(dtvalidamateriahorario.Rows[0].Cells[4].Value.ToString());
-
-                int c1;
-                int c2;
-
-                if (a == horario || a2 == horario2)
+                dtcgrupo.DataSource = dt8;
+                string validacarrera = dtcgrupo.Rows[0].Cells[0].Value.ToString();
+                string validagrupo = dtcgrupo.Rows[0].Cells[1].Value.ToString();
+                string siglasgrupo = validagrupo.Remove(0, 2);
+                string siglasgrupo2 = grupo.Remove(0, 2);
+                if (siglasgrupo  == siglasgrupo2 )
                 {
-                    MessageBox.Show("No puede haber dos materias en el mismo horario");
+
+                    DataTable dt5 = bl.Valida_materia(matcarr, periodo, grupo);
+                    if (dt5.Rows.Count == 0)
+                    {
+
+
+
+                        DataTable dt = bl.Valida_horario(horario, horario2, periodo, grupo);
+                        if (dt.Rows.Count == 0)
+                        {
+                            
+                            bl.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No puede haber dos materias en el mismo horario");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("El grupo no puede tener asignada dos veces la materia en el mismo periodo");
+                    }
+
+                    
+                }
+                else
+                {
+                    MessageBox.Show(" Lo siento pero la carrera " + validacarrera +" pertenece al grupo " + validagrupo  );
 
                 }
-                else if (b == periodo)
-                {
-                    MessageBox.Show("No puede tener dos veces una materia en el mismo periodo");
-
-                }
-
+               
             }
             else
             {
-                bl.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
+                DataTable dt5 = bl.Valida_materia(matcarr, periodo, grupo);
+
+
+                if (dt5.Rows.Count == 0)
+                {
+
+
+
+                    DataTable dt = bl.Valida_horario(horario, horario2, periodo, grupo);
+                    if (dt.Rows.Count == 0)
+                    {
+                        bl.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No puede haber dos materias en el mismo horario");
+                    }
+
+                }
+                else
+
+                {
+                    MessageBox.Show("El grupo no puede tener asignada dos veces la materia en el mismo periodo");
+
+                }
+
+
+
+
+                //bl.Alta_rel_matcarr_horario(matcarr, horario, horario2, periodo, grupo);
             }
+             
+
+        }
 
 
-
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)

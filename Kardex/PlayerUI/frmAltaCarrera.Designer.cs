@@ -41,15 +41,18 @@
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.zzz = new System.Windows.Forms.DataGridView();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.gbAltaCarrera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zzz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAltaCarrera
             // 
             this.gbAltaCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaCarrera.Controls.Add(this.dtca2);
             this.gbAltaCarrera.Controls.Add(this.textBox1);
             this.gbAltaCarrera.Controls.Add(this.dtca);
             this.gbAltaCarrera.Controls.Add(this.pictureBox1);
@@ -174,6 +177,15 @@
             this.zzz.Size = new System.Drawing.Size(240, 150);
             this.zzz.TabIndex = 16;
             // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(282, 211);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(172, 99);
+            this.dtca2.TabIndex = 18;
+            this.dtca2.Visible = false;
+            // 
             // frmAltaCarrera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zzz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +220,6 @@
         private System.Windows.Forms.DataGridView zzz;
         private System.Windows.Forms.DataGridView dtca;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

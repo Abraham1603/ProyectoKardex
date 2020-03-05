@@ -81,7 +81,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(212, 240);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label6
             // 
@@ -131,6 +130,7 @@
             this.dgvCarrera.Name = "dgvCarrera";
             this.dgvCarrera.Size = new System.Drawing.Size(767, 407);
             this.dgvCarrera.TabIndex = 0;
+            this.dgvCarrera.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarrera_CellContentDoubleClick_1);
             // 
             // txtCarrera
             // 
@@ -140,6 +140,7 @@
             this.txtCarrera.Name = "txtCarrera";
             this.txtCarrera.Size = new System.Drawing.Size(285, 33);
             this.txtCarrera.TabIndex = 1;
+            this.txtCarrera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCarrera_KeyPress_1);
             // 
             // cbTodas
             // 
@@ -152,6 +153,7 @@
             this.cbTodas.TabIndex = 2;
             this.cbTodas.Text = "Todas";
             this.cbTodas.UseVisualStyleBackColor = true;
+            this.cbTodas.CheckedChanged += new System.EventHandler(this.cbTodas_CheckedChanged_1);
             // 
             // frmConsultaCampus
             // 

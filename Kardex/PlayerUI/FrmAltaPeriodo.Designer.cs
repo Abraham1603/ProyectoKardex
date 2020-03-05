@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAltaPeriodo));
             this.gbAltaCarrera = new System.Windows.Forms.GroupBox();
+            this.dtca2 = new System.Windows.Forms.DataGridView();
             this.dtca = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.txtPeriodo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gbAltaCarrera.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +49,7 @@
             // gbAltaCarrera
             // 
             this.gbAltaCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.gbAltaCarrera.Controls.Add(this.dtca2);
             this.gbAltaCarrera.Controls.Add(this.dtca);
             this.gbAltaCarrera.Controls.Add(this.pictureBox1);
             this.gbAltaCarrera.Controls.Add(this.label6);
@@ -62,6 +65,15 @@
             this.gbAltaCarrera.TabIndex = 5;
             this.gbAltaCarrera.TabStop = false;
             this.gbAltaCarrera.Enter += new System.EventHandler(this.gbAltaCarrera_Enter);
+            // 
+            // dtca2
+            // 
+            this.dtca2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtca2.Location = new System.Drawing.Point(260, 211);
+            this.dtca2.Name = "dtca2";
+            this.dtca2.Size = new System.Drawing.Size(172, 99);
+            this.dtca2.TabIndex = 37;
+            this.dtca2.Visible = false;
             // 
             // dtca
             // 
@@ -171,6 +183,7 @@
             this.Text = "FrmAltaPeriodo";
             this.gbAltaCarrera.ResumeLayout(false);
             this.gbAltaCarrera.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtca2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.TextBox txtPeriodo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtca;
+        private System.Windows.Forms.DataGridView dtca2;
     }
 }

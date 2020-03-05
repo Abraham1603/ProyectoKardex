@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -139,6 +140,12 @@
     <Compile Include="frmAltaRelmatcarr.Designer.cs">
       <DependentUpon>frmAltaRelmatcarr.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAlta_rel_martcarr_horario_maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlta_rel_martcarr_horario_maestro.Designer.cs">
+      <DependentUpon>frmAlta_rel_martcarr_horario_maestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlta_rel_matcatt_horario_alumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +175,12 @@
     </Compile>
     <Compile Include="frmConsultaCarrera.Designer.cs">
       <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaGrupos.Designer.cs">
+      <DependentUpon>frmConsultaGrupos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsultaMaestro.cs">
       <SubType>Form</SubType>
@@ -205,6 +218,12 @@
     <Compile Include="frmConsulta_relmatcarr_horario_alumno.Designer.cs">
       <DependentUpon>frmConsulta_relmatcarr_horario_alumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsulta_relmatcarr_horario_maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_relmatcarr_horario_maestro.Designer.cs">
+      <DependentUpon>frmConsulta_relmatcarr_horario_maestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCosultaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +242,12 @@
     <Compile Include="frmmodificacalificacion.Designer.cs">
       <DependentUpon>frmmodificacalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificaCampus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificaCampus.Designer.cs">
+      <DependentUpon>frmModificaCampus.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificaCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +265,18 @@
     </Compile>
     <Compile Include="frmModificacion_rel_matcarr_horario_alumnocs.Designer.cs">
       <DependentUpon>frmModificacion_rel_matcarr_horario_alumnocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificacion_rel_matcarr_horario_maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificacion_rel_matcarr_horario_maestro.Designer.cs">
+      <DependentUpon>frmModificacion_rel_matcarr_horario_maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificaGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificaGrupos.Designer.cs">
+      <DependentUpon>frmModificaGrupos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModificaMaestro.cs">
       <SubType>Form</SubType>
@@ -300,11 +337,23 @@
     <Compile Include="ReactivarAlumno.Designer.cs">
       <DependentUpon>ReactivarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReactivarCampus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactivarCampus.Designer.cs">
+      <DependentUpon>ReactivarCampus.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReactivarCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReactivarCarrera.Designer.cs">
       <DependentUpon>ReactivarCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReactivarGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactivarGrupos.Designer.cs">
+      <DependentUpon>ReactivarGrupos.cs</DependentUpon>
     </Compile>
     <Compile Include="ReactivarMaestro.cs">
       <SubType>Form</SubType>
@@ -348,6 +397,12 @@
     <Compile Include="ReactivarRel_Matcarr_horario_alumno.Designer.cs">
       <DependentUpon>ReactivarRel_Matcarr_horario_alumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReactivarRel_Matcarr_horario_maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactivarRel_Matcarr_horario_maestro.Designer.cs">
+      <DependentUpon>ReactivarRel_Matcarr_horario_maestro.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Alta-rel-matcarrhorario-maes.resx">
       <DependentUpon>Alta-rel-matcarrhorario-maes.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,6 +442,9 @@
     <EmbeddedResource Include="frmAltaRelmatcarr.resx">
       <DependentUpon>frmAltaRelmatcarr.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAlta_rel_martcarr_horario_maestro.resx">
+      <DependentUpon>frmAlta_rel_martcarr_horario_maestro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlta_rel_matcatt_horario_alumno.resx">
       <DependentUpon>frmAlta_rel_matcatt_horario_alumno.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCarrera.resx">
       <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaGrupos.resx">
+      <DependentUpon>frmConsultaGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultaMaestro.resx">
       <DependentUpon>FrmConsultaMaestro.cs</DependentUpon>
@@ -420,6 +481,9 @@
     <EmbeddedResource Include="frmConsulta_relmatcarr_horario_alumno.resx">
       <DependentUpon>frmConsulta_relmatcarr_horario_alumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulta_relmatcarr_horario_maestro.resx">
+      <DependentUpon>frmConsulta_relmatcarr_horario_maestro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCosultaAlumno.resx">
       <DependentUpon>frmCosultaAlumno.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,6 +493,9 @@
     <EmbeddedResource Include="frmmodificacalificacion.resx">
       <DependentUpon>frmmodificacalificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificaCampus.resx">
+      <DependentUpon>frmModificaCampus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModificaCarrera.resx">
       <DependentUpon>frmModificaCarrera.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +504,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificacion_rel_matcarr_horario_alumnocs.resx">
       <DependentUpon>frmModificacion_rel_matcarr_horario_alumnocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificacion_rel_matcarr_horario_maestro.resx">
+      <DependentUpon>frmModificacion_rel_matcarr_horario_maestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificaGrupos.resx">
+      <DependentUpon>frmModificaGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificaMaestro.resx">
       <DependentUpon>FrmModificaMaestro.cs</DependentUpon>
@@ -475,8 +548,14 @@
     <EmbeddedResource Include="ReactivarAlumno.resx">
       <DependentUpon>ReactivarAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReactivarCampus.resx">
+      <DependentUpon>ReactivarCampus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReactivarCarrera.resx">
       <DependentUpon>ReactivarCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactivarGrupos.resx">
+      <DependentUpon>ReactivarGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReactivarMaestro.resx">
       <DependentUpon>ReactivarMaestro.cs</DependentUpon>
@@ -498,6 +577,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReactivarRel_Matcarr_horario_alumno.resx">
       <DependentUpon>ReactivarRel_Matcarr_horario_alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactivarRel_Matcarr_horario_maestro.resx">
+      <DependentUpon>ReactivarRel_Matcarr_horario_maestro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

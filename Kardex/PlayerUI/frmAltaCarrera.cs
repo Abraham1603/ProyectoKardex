@@ -43,7 +43,22 @@ namespace PlayerUI
             }
             else
             {
-                bl.AltaCarrera(carrera, fecha);
+                DataTable dt2 = bl.validacarrerainactivo(carrera);
+                if (dt2.Rows.Count > 0)
+                {
+                    dtca2.DataSource = dt2;
+                    string b = Convert.ToString(dtca2.Rows[0].Cells[0].Value.ToString());
+
+                    if (b == carrera)
+                    {
+                        MessageBox.Show("La carrera ya existe y se encuentra dada de baja");
+                    }
+
+                }
+                else
+                {
+                    bl.AltaCarrera(carrera, fecha);
+                }
                 
             }
             
